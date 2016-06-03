@@ -1,0 +1,1148 @@
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  margin: 0px;
+  color: #fff; }
+  body h1 {
+    font-size: 4em;
+    font-weight: 100;
+    margin-bottom: 0; }
+  body #wrapper, body #left-panel, body #right-panel {
+    transition: .5s ease; }
+    body #wrapper #left-panel > h1, body #wrapper #right-panel > h1, body #left-panel #left-panel > h1, body #left-panel #right-panel > h1, body #right-panel #left-panel > h1, body #right-panel #right-panel > h1 {
+      display: inline; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background-color: #375880;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+#wrapper {
+  padding: 50px 100px;
+  position: relative;
+  height: 100vh;
+  top: 0; }
+  #wrapper h1 {
+    text-align: center; }
+  #wrapper h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top: 0; }
+  #wrapper .buttons {
+    max-width: 400px;
+    margin: 50px auto;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    justify-content: center; }
+    #wrapper .buttons .hr-about {
+      position: absolute;
+      top: 39%;
+      left: -100%;
+      width: 100%; }
+    #wrapper .buttons .hr-portfolio {
+      position: absolute;
+      top: 39%;
+      right: -100%;
+      width: 100%; }
+    #wrapper .buttons .fa {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      font-size: 50px;
+      color: #fff; }
+    #wrapper .buttons #left-panel-btn {
+      display: inline-block;
+      padding: 15px;
+      margin-right: 20px;
+      border: 1px solid #fff;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      transition: .5s ease;
+      position: relative; }
+      #wrapper .buttons #left-panel-btn:hover {
+        background-color: #fff; }
+      #wrapper .buttons #left-panel-btn::before {
+        content: '';
+        visibility: hidden;
+        width: 79px;
+        height: 79px;
+        border: 1px solid #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: .5s ease; }
+      #wrapper .buttons #left-panel-btn::after {
+        content: 'About me';
+        text-decoration: none;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 25px;
+        width: 115px;
+        margin: 10px auto;
+        display: block;
+        position: absolute;
+        transition: .5s ease;
+        transform: rotateZ(-45deg) translate(-280%, -160%);
+        color: #fff; }
+    #wrapper .buttons #left-panel-btn:hover:before {
+      visibility: visible;
+      left: -10px;
+      top: 10px; }
+    #wrapper .buttons #left-panel-btn:hover:after {
+      visibility: visible;
+      opacity: 1;
+      transform: rotateZ(-45deg) translate(-280%, -120%); }
+    #wrapper .buttons #left-panel-btn:hover .fa {
+      color: #375880; }
+    #wrapper .buttons #right-panel-btn {
+      display: inline-block;
+      padding: 15px;
+      margin-left: 20px;
+      border: 1px solid #fff;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      transition: .5s ease;
+      position: relative; }
+      #wrapper .buttons #right-panel-btn:hover {
+        background-color: #fff; }
+      #wrapper .buttons #right-panel-btn::before {
+        content: 'Portfolio';
+        text-decoration: none;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 25px;
+        width: 132px;
+        margin: 10px auto;
+        display: block;
+        position: absolute;
+        transition: .5s ease;
+        transform: rotateZ(-45deg) translate(230%, -60%);
+        color: #fff; }
+      #wrapper .buttons #right-panel-btn::after {
+        content: '';
+        visibility: hidden;
+        width: 79px;
+        height: 79px;
+        border: 1px solid #fff;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: .5s ease; }
+    #wrapper .buttons #right-panel-btn:hover:before {
+      visibility: visible;
+      opacity: 1;
+      transform: rotateZ(-45deg) translate(230%, -20%); }
+    #wrapper .buttons #right-panel-btn:hover:after {
+      visibility: visible;
+      right: -10px;
+      bottom: 10px; }
+    #wrapper .buttons #right-panel-btn:hover .fa {
+      color: #375880; }
+    #wrapper .buttons .logo {
+      width: 38px;
+      height: 38px;
+      padding: 20px;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%) rotateZ(45deg);
+      transition: .5s ease;
+      border: 1px solid #fff; }
+      #wrapper .buttons .logo:hover {
+        background-color: #fff;
+        cursor: default; }
+      #wrapper .buttons .logo p {
+        transform: rotatez(-45deg);
+        text-transform: uppercase;
+        font-size: 40px;
+        position: absolute;
+        top: -25px;
+        left: 13px; }
+    #wrapper .buttons .logo:hover p {
+      color: #375880; }
+
+#left-panel {
+  padding: 50px 100px;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%); }
+  #left-panel h1 {
+    display: inline-block; }
+  #left-panel .fa {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-size: 20px;
+    color: #fff; }
+  #left-panel #return-left {
+    display: inline-block;
+    padding: 15px;
+    margin-left: 30px;
+    border: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .5s ease;
+    position: relative;
+    top: -10px; }
+    #left-panel #return-left:hover {
+      background-color: #fff; }
+    #left-panel #return-left::before {
+      content: 'Return';
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: 0.5s ease;
+      transform: rotateZ(-45deg) translate(0%, -10px);
+      color: #fff; }
+    #left-panel #return-left::after {
+      content: '';
+      visibility: hidden;
+      opacity: 0;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #fff;
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      z-index: -1;
+      transition: .5s ease; }
+  #left-panel #return-left:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateZ(-45deg) translate(150%, -10px); }
+  #left-panel #return-left:hover:after {
+    visibility: visible;
+    opacity: 1;
+    right: -10px;
+    bottom: 10px; }
+  #left-panel #return-left:hover .fa {
+    color: #375880; }
+  #left-panel .about {
+    display: flex;
+    justify-content: space-between; }
+    #left-panel .about p {
+      text-align: justify;
+      margin: 50px 0; }
+    #left-panel .about .profile-photo {
+      width: 100px;
+      height: 100px;
+      margin: 0 90px 0 80px;
+      position: relative; }
+      #left-panel .about .profile-photo::before {
+        content: url(../img/profile-photo.png); }
+      #left-panel .about .profile-photo::after {
+        content: '';
+        visibility: visible;
+        width: 120px;
+        height: 120px;
+        border: 1px solid #fff;
+        position: absolute;
+        transform: rotateZ(45deg);
+        top: 25px;
+        left: 45px;
+        z-index: -1; }
+  #left-panel button {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    transition: .5s ease; }
+    #left-panel button:hover {
+      background-color: #fff;
+      color: #375880; }
+  #left-panel .back-to-top {
+    display: inline-block;
+    max-width: 60px;
+    margin: 0 auto 50px;
+    padding: 10px;
+    border: 1px solid #fff;
+    -webkit-transform: rotate(-45deg) translateX(-50%);
+    -moz-transform: rotate(-45deg) translateX(-50%);
+    -ms-transform: rotate(-45deg) translateX(-50%);
+    -o-transform: rotate(-45deg) translateX(-50%);
+    transform: rotate(-45deg) translateX(-50%);
+    transition: .5s ease;
+    position: relative;
+    left: 50%; }
+    #left-panel .back-to-top:hover {
+      background-color: #fff; }
+    #left-panel .back-to-top .fa {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      transition: .5s ease;
+      font-size: 16px; }
+  #left-panel .back-to-top:hover .fa {
+    color: #375880; }
+
+.workflow {
+  margin: 100px 0; }
+  .workflow .accordion {
+    margin: 50px auto 0;
+    max-width: 800px;
+    padding: 0; }
+    .workflow .accordion li {
+      list-style-type: none;
+      padding: 1px 0 1px 10px;
+      margin-bottom: 60px;
+      margin-left: 15%;
+      position: relative;
+      cursor: default; }
+      .workflow .accordion li:last-child {
+        margin-bottom: none; }
+        .workflow .accordion li:last-child span::after {
+          visibility: hidden; }
+      .workflow .accordion li span {
+        display: inline-block;
+        width: 62px;
+        height: 62px;
+        position: absolute;
+        top: 50%;
+        left: -15%;
+        transform: translateY(-50%); }
+        .workflow .accordion li span::after {
+          content: '';
+          display: inline-block;
+          visibility: visible;
+          height: 100px;
+          width: 2px;
+          background: #fff;
+          position: absolute;
+          left: 50%;
+          bottom: -124px; }
+        .workflow .accordion li span:last-child::after {
+          display: none; }
+      .workflow .accordion li p {
+        margin: 20px 0; }
+      .workflow .accordion li:nth-child(1) span {
+        background-image: url(../img/icon/pencil.png); }
+      .workflow .accordion li:nth-child(2) span {
+        background-image: url(../img/icon/tools.png); }
+      .workflow .accordion li:nth-child(3) span {
+        background-image: url(../img/icon/settings.png); }
+      .workflow .accordion li:nth-child(4) span {
+        background-image: url(../img/icon/code.png); }
+      .workflow .accordion li:nth-child(5) span {
+        background-image: url(../img/icon/check.png); }
+
+#right-panel {
+  padding: 50px 100px;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(100%); }
+  #right-panel h1 {
+    display: inline-block; }
+  #right-panel .fa {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    font-size: 20px;
+    color: #fff; }
+  #right-panel #return-right {
+    display: inline-block;
+    padding: 15px;
+    margin-left: 30px;
+    border: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .5s ease;
+    position: relative;
+    top: -10px; }
+    #right-panel #return-right:hover {
+      background-color: #fff; }
+    #right-panel #return-right::before {
+      content: 'Return';
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: 0.5s ease;
+      transform: rotateZ(-45deg) translate(0%, -10px);
+      color: #fff; }
+    #right-panel #return-right::after {
+      content: '';
+      visibility: hidden;
+      opacity: 0;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #fff;
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      z-index: -1;
+      transition: .5s ease; }
+  #right-panel #return-right:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateZ(-45deg) translate(150%, -10px); }
+  #right-panel #return-right:hover:after {
+    visibility: visible;
+    opacity: 1;
+    right: -10px;
+    bottom: 10px; }
+  #right-panel #return-right:hover .fa {
+    color: #375880; }
+  #right-panel .portfolio p {
+    text-align: justify;
+    margin: 50px 0; }
+  #right-panel .portfolio #gallery {
+    width: 100%;
+    margin: 50px 0; }
+    #right-panel .portfolio #gallery .thumb {
+      background-color: blue;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      width: 50%;
+      height: 350px; }
+      #right-panel .portfolio #gallery .thumb img {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0; }
+      #right-panel .portfolio #gallery .thumb .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        padding: 20px;
+        transition: .5s ease;
+        box-shadow: -2px 4px 12px #272727;
+        z-index: 2;
+        transform: translateX(100%);
+        opacity: 0; }
+        #right-panel .portfolio #gallery .thumb .overlay::after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-right: 20px solid rgba(255, 255, 255, 0.8);
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          -webkit-filter: drop-shadow(-4px 0px 2px #272727);
+          -moz-filter: drop-shadow(-4px 0px 2px #272727);
+          -ms-filter: drop-shadow(-4px 0px 2px #272727);
+          filter: drop-shadow(-4px 0px 2px #272727);
+          z-index: 1;
+          transform: translateY(-50%); }
+        #right-panel .portfolio #gallery .thumb .overlay h3 {
+          color: #375880; }
+        #right-panel .portfolio #gallery .thumb .overlay p {
+          color: #333; }
+        #right-panel .portfolio #gallery .thumb .overlay a {
+          color: #375880;
+          padding: 10px 20px;
+          text-decoration: none;
+          border: 1px solid #375880;
+          transition: .5s ease; }
+          #right-panel .portfolio #gallery .thumb .overlay a:hover {
+            background-color: #375880;
+            color: #fff; }
+  #right-panel .portfolio .clear::after {
+    content: '';
+    display: block;
+    clear: both; }
+  #right-panel .back-to-top {
+    display: inline-block;
+    max-width: 60px;
+    margin: 0 auto 50px;
+    padding: 10px;
+    border: 1px solid #fff;
+    -webkit-transform: rotate(-45deg) translateX(-50%);
+    -moz-transform: rotate(-45deg) translateX(-50%);
+    -ms-transform: rotate(-45deg) translateX(-50%);
+    -o-transform: rotate(-45deg) translateX(-50%);
+    transform: rotate(-45deg) translateX(-50%);
+    transition: .5s ease;
+    position: relative;
+    left: 50%; }
+    #right-panel .back-to-top:hover {
+      background-color: #fff; }
+    #right-panel .back-to-top .fa {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      transition: .5s ease;
+      font-size: 16px; }
+  #right-panel .back-to-top:hover .fa {
+    color: #375880; }
+
+.proj-desc {
+  background-color: #fff;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  padding: 0 50px;
+  box-sizing: border-box; }
+  .proj-desc h1, .proj-desc p {
+    color: #333; }
+
+.proj-gallery {
+  width: 50%;
+  transform: translateX(100%); }
+
+.proj-desc .buttons {
+  max-width: 400px;
+  margin: 50px auto;
+  position: relative;
+  top: 10vh;
+  display: flex;
+  justify-content: center; }
+  .proj-desc .buttons .non-prev::before, .proj-desc .buttons .non-next::before {
+    display: none !important;
+    content: '' !important; }
+  .proj-desc .buttons .non-prev::after, .proj-desc .buttons .non-next::after {
+    display: none !important;
+    content: '' !important; }
+  .proj-desc .buttons .fa {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-size: 20px;
+    color: #375880; }
+  .proj-desc .buttons #left-panel-btn {
+    display: inline-block;
+    padding: 15px;
+    margin-right: 15px;
+    border: 1px solid #375880;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .5s ease;
+    position: relative; }
+    .proj-desc .buttons #left-panel-btn:hover {
+      background-color: #375880; }
+    .proj-desc .buttons #left-panel-btn::before {
+      content: '';
+      visibility: hidden;
+      opacity: 0;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #375880;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      transition: .5s ease; }
+    .proj-desc .buttons #left-panel-btn::after {
+      content: 'Previous';
+      text-decoration: none;
+      visibility: hidden;
+      opacity: 0;
+      font-size: 20px;
+      width: 115px;
+      margin: 10px auto;
+      display: block;
+      position: absolute;
+      transition: .5s ease;
+      transform: rotateZ(-45deg) translate(-26%, -235%);
+      color: #375880; }
+  .proj-desc .buttons #left-panel-btn:hover:before {
+    visibility: visible;
+    opacity: 1;
+    left: -10px;
+    top: 10px; }
+  .proj-desc .buttons #left-panel-btn:hover:after {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateZ(-45deg) translate(-100%, -235%); }
+  .proj-desc .buttons #left-panel-btn:hover .fa {
+    color: #fff; }
+  .proj-desc .buttons #right-panel-btn {
+    display: inline-block;
+    padding: 15px;
+    margin-left: 15px;
+    border: 1px solid #375880;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .5s ease;
+    position: relative; }
+    .proj-desc .buttons #right-panel-btn:hover {
+      background-color: #375880; }
+    .proj-desc .buttons #right-panel-btn::before {
+      content: 'Next';
+      text-decoration: none;
+      visibility: hidden;
+      opacity: 0;
+      font-size: 20px;
+      width: 132px;
+      margin: 10px auto;
+      display: block;
+      position: absolute;
+      transition: .5s ease;
+      transform: rotateZ(-45deg) translate(0%, -200%);
+      color: #375880; }
+    .proj-desc .buttons #right-panel-btn::after {
+      content: '';
+      visibility: hidden;
+      opacity: 0;
+      width: 50px;
+      height: 51px;
+      border: 1px solid #375880;
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      z-index: -1;
+      transition: .5s ease; }
+  .proj-desc .buttons #right-panel-btn:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateZ(-45deg) translate(80%, -200%); }
+  .proj-desc .buttons #right-panel-btn:hover:after {
+    visibility: visible;
+    opacity: 1;
+    right: -10px;
+    bottom: 10px; }
+  .proj-desc .buttons #right-panel-btn:hover .fa {
+    color: #fff; }
+  .proj-desc .buttons #gallery-menu {
+    width: 20px;
+    padding: 15px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-51%) rotateZ(45deg);
+    transition: .5s ease;
+    border: 1px solid #375880; }
+    .proj-desc .buttons #gallery-menu:hover {
+      background-color: #375880;
+      cursor: pointer; }
+    .proj-desc .buttons #gallery-menu::before {
+      content: 'Menu';
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: 0.5s ease;
+      transform: rotateZ(-45deg) translate(-20%, 0);
+      color: #375880; }
+    .proj-desc .buttons #gallery-menu::after {
+      content: '';
+      visibility: hidden;
+      opacity: 0;
+      width: 50px;
+      height: 51px;
+      border: 1px solid #375880;
+      position: absolute;
+      bottom: -1px;
+      right: -1px;
+      transition: .5s ease; }
+  .proj-desc .buttons #gallery-menu:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateZ(-45deg) translate(-20%, 60px); }
+  .proj-desc .buttons #gallery-menu:hover:after {
+    visibility: visible;
+    opacity: 1;
+    bottom: -10px;
+    right: -10px; }
+  .proj-desc .buttons #gallery-menu:hover .fa {
+    color: #fff; }
+
+.contact {
+  padding: 50px 100px 100px;
+  text-align: center;
+  transform: translateY(75%); }
+  .contact p {
+    margin-bottom: 20px; }
+  .contact .email {
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    width: 242px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .5s ease;
+    text-decoration: none; }
+    .contact .email:hover {
+      color: #375880;
+      background-color: #fff; }
+  .contact .contact-icon {
+    display: flex;
+    justify-content: space-around;
+    width: 242px;
+    margin: 20px auto; }
+    .contact .contact-icon .fa {
+      font-size: 50px;
+      color: #fff;
+      transition: .5s ease; }
+      .contact .contact-icon .fa:hover {
+        -webkit-filter: drop-shadow(1px 1px 2px #333);
+        -moz-filter: drop-shadow(1px 1px 2px #333);
+        -ms-filter: drop-shadow(1px 1px 2px #333);
+        filter: drop-shadow(1px 1px 2px #333); }
+
+@media (max-width: 768px) {
+  #wrapper, #left-panel, #right-panel, .contact {
+    padding: 20px; }
+  #wrapper .buttons #left-panel-btn:before {
+    display: none; }
+  #wrapper .buttons #left-panel-btn:after {
+    display: none; }
+  #wrapper .buttons #right-panel-btn:before {
+    display: none; }
+  #wrapper .buttons #right-panel-btn:after {
+    display: none; }
+  #wrapper .buttons .logo {
+    background-color: #fff; }
+    #wrapper .buttons .logo p {
+      color: #375880; }
+  #wrapper .buttons hr {
+    display: none; }
+  #left-panel #return-left::before {
+    display: none; }
+  #left-panel #return-left::after {
+    display: none; }
+  #left-panel .about {
+    flex-direction: column-reverse; }
+    #left-panel .about .profile-photo {
+      margin: 50px 0;
+      left: 50%;
+      transform: translateX(-90%); }
+  #right-panel #return-right::before {
+    display: none; }
+  #right-panel #return-right::after {
+    display: none; }
+  .buttons a::before {
+    display: none; }
+  .buttons a::after {
+    display: none; } }
+
+@media (max-width: 500px) {
+  body h1 {
+    font-size: 3em !important; }
+  body h2 {
+    font-size: 1.5em !important; }
+  #wrapper {
+    left: 0; }
+  #left-panel #return-left {
+    padding: 7px;
+    margin-left: 20px; }
+  #left-panel li {
+    margin-left: 0; }
+    #left-panel li .icon {
+      position: static;
+      display: inline-block;
+      margin-right: 20px;
+      transform: translateY(20px); }
+      #left-panel li .icon:last-of-type {
+        margin-right: 3px; }
+    #left-panel li h2 {
+      display: inline-block; }
+    #left-panel li p {
+      text-align: justify; }
+    #left-panel li span::after {
+      visibility: hidden; }
+  #right-panel #return-right {
+    padding: 7px;
+    margin-left: 20px; } }
+
+@media (max-height: 520px) {
+  body h1 {
+    margin-top: 0 !important; } }
+
+@media (max-width: 1010px) {
+  .proj-desc h1 {
+    font-size: 2em; } }
+
+@media (max-width: 800px) {
+  .project-view {
+    display: flex;
+    flex-direction: column; }
+    .project-view .proj-desc {
+      position: static;
+      width: 100%;
+      padding-bottom: 50px; }
+      .project-view .proj-desc .buttons {
+        top: 0; }
+    .project-view .proj-gallery {
+      width: 100%;
+      transform: translateX(0); } }

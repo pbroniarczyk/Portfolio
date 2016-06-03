@@ -1,0 +1,134 @@
+#left-panel
+  padding: 50px 100px
+  height: 100%
+  opacity: 0
+  position: absolute
+  top: 0
+  transform: translateX(-100%)
+
+  h1
+    display: inline-block
+
+  .fa
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -ms-transform:rotate(-45deg)
+    -o-transform:rotate(-45deg)
+    transform: rotate(-45deg)
+    font-size: 20px
+    color: #fff
+
+  #return-left
+    display: inline-block
+    padding: 15px
+    margin-left: 30px
+    border: 1px solid #fff
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -ms-transform:rotate(45deg)
+    -o-transform:rotate(45deg)
+    transform: rotate(45deg)
+    transition: .5s ease
+    position: relative
+    top: -10px
+    &:hover
+      background-color: #fff
+    &::before
+      content: 'Return'
+      visibility: hidden
+      opacity: 0
+      position: absolute
+      transition: 0.5s ease
+      transform: rotateZ(-45deg) translate(0%, -10px)
+      color: #fff
+    &::after
+      content: ''
+      visibility: hidden
+      opacity: 0
+      width: 50px
+      height: 50px
+      border: 1px solid #fff
+      position: absolute
+      right: -1px
+      bottom: -1px
+      z-index: -1
+      transition: .5s ease
+
+  #return-left:hover:before
+    visibility: visible
+    opacity: 1
+    transform: rotateZ(-45deg) translate(150%, -10px)
+
+  #return-left:hover:after
+    visibility: visible
+    opacity: 1
+    right: -10px
+    bottom: 10px
+
+  #return-left:hover .fa
+    color: $accent
+
+  .about
+    display: flex
+    justify-content: space-between
+    p
+      text-align: justify
+      margin: 50px 0
+
+    .profile-photo
+      width: 100px
+      height: 100px
+      margin: 0 90px 0 80px
+      position: relative
+      &::before
+        content: url(../img/profile-photo.png)
+      &::after
+        content: ''
+        visibility: visible
+        width: 120px
+        height: 120px
+        border: 1px solid #fff
+        position: absolute
+        transform: rotateZ(45deg)
+        top: 25px
+        left: 45px
+        z-index: -1
+
+  button
+    background-color: transparent
+    color: #fff
+    padding: 10px 20px
+    border: 1px solid #fff
+    transition: .5s ease
+    &:hover
+      background-color: #fff
+      color: $accent
+
+  .back-to-top
+    display: inline-block
+    max-width: 60px
+    margin: 0 auto 50px
+    padding: 10px
+    border: 1px solid #fff
+    -webkit-transform: rotate(-45deg) translateX(-50%)
+    -moz-transform: rotate(-45deg) translateX(-50%)
+    -ms-transform: rotate(-45deg) translateX(-50%)
+    -o-transform: rotate(-45deg) translateX(-50%)
+    transform: rotate(-45deg) translateX(-50%)
+    transition: .5s ease
+    position: relative
+    left: 50%
+    &:hover
+      background-color: #fff
+
+    .fa
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      transition: .5s ease
+      font-size: 16px
+
+  .back-to-top:hover .fa
+    color: $accent

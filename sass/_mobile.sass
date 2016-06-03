@@ -1,0 +1,124 @@
+//  SCREEN WIDTH
+@media (max-width: 768px)
+
+  //  GLOBAL
+  #wrapper, #left-panel, #right-panel, .contact
+    padding: 20px
+
+  //  TITLE PAGE
+  #wrapper
+    .buttons
+      #left-panel-btn:before
+        display: none
+      #left-panel-btn:after
+        display: none
+      #right-panel-btn:before
+        display: none
+      #right-panel-btn:after
+        display: none
+
+      .logo
+        background-color: #fff
+        p
+          color: $accent
+
+      hr
+        display: none
+
+  //     ABOUT ME PAGE
+  #left-panel
+    #return-left
+      &::before
+        display: none
+      &::after
+        display: none
+
+    .about
+      flex-direction: column-reverse
+
+      .profile-photo
+        margin: 50px 0
+        left: 50%
+        transform: translateX(-90%)
+
+  //     PORTFOLIO
+  #right-panel
+    #return-right
+      &::before
+        display: none
+      &::after
+        display: none
+
+  //    PROJECT
+  .buttons
+    a
+      &::before
+        display: none
+      &::after
+        display: none
+
+@media (max-width: 500px)
+  //   GLOBAL
+  body
+    h1
+      font-size: 3em !important
+    h2
+      font-size: 1.5em !important
+
+  // MAIN PAGE
+  #wrapper
+    left: 0
+
+  //   ABOUT ME PAGE
+  #left-panel
+    #return-left
+      padding: 7px
+      margin-left: 20px
+
+    li
+      margin-left: 0
+      .icon
+        position: static
+        display: inline-block
+        margin-right: 20px
+        transform: translateY(20px)
+        &:last-of-type
+          margin-right: 3px
+      h2
+        display: inline-block
+      p
+        text-align: justify
+      span::after
+        visibility: hidden
+
+  //   PORTFOLIO
+  #right-panel
+    #return-right
+      padding: 7px
+      margin-left: 20px
+
+//    SCREEN HEIGHT
+@media (max-height: 520px)
+  body h1
+    margin-top: 0 !important
+
+
+//    PROJECT
+@media (max-width: 1010px)
+
+  .proj-desc h1
+    font-size: 2em
+
+@media (max-width: 800px)
+  .project-view
+    display: flex
+    flex-direction: column
+    .proj-desc
+      position: static
+      width: 100%
+      padding-bottom: 50px
+      .buttons
+        top: 0
+    .proj-gallery
+      width: 100%
+      transform: translateX(0)

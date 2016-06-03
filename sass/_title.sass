@@ -1,0 +1,175 @@
+#wrapper
+  padding: 50px 100px
+  position: relative
+  height: 100vh
+  top: 0
+
+  h1
+    text-align: center
+
+  h2
+    text-align: center
+    font:
+      size: 3em
+      weight: 100
+    margin-top: 0
+
+  .buttons
+    max-width: 400px
+    margin: 50px auto
+    position: relative
+    top: 10vh
+    display: flex
+    justify-content: center
+
+    .hr-about
+      position: absolute
+      top: 39%
+      left: -100%
+      width: 100%
+
+    .hr-portfolio
+      position: absolute
+      top: 39%
+      right: -100%
+      width: 100%
+
+    .fa
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -ms-transform:rotate(-45deg)
+      -o-transform:rotate(-45deg)
+      transform: rotate(-45deg)
+      font-size: 50px
+      color: #fff
+
+    //  LEFT BUTTON
+    #left-panel-btn
+      display: inline-block
+      padding: 15px
+      margin-right: 20px
+      border: 1px solid #fff
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -ms-transform:rotate(45deg)
+      -o-transform:rotate(45deg)
+      transform: rotate(45deg)
+      transition: .5s ease
+      position: relative
+      &:hover
+        background-color: #fff
+      &::before
+        content: ''
+        visibility: hidden
+        width: 79px
+        height: 79px
+        border: 1px solid #fff
+        position: absolute
+        left: 0
+        top: 0
+        z-index: -1
+        transition: .5s ease
+      &::after
+        content: 'About me'
+        text-decoration: none
+        visibility: hidden
+        opacity: 0
+        font-size: 25px
+        width: 115px
+        margin: 10px auto
+        display: block
+        position: absolute
+        transition: .5s ease
+        transform: rotateZ(-45deg) translate(-280%, -160%)
+        color: #fff
+
+    #left-panel-btn:hover:before
+      visibility: visible
+      left: -10px
+      top: 10px
+
+    #left-panel-btn:hover:after
+      visibility: visible
+      opacity: 1
+      transform: rotateZ(-45deg) translate(-280%, -120%)
+
+    #left-panel-btn:hover .fa
+      color: $accent
+
+    //  RIGHT BUTTON
+    #right-panel-btn
+      display: inline-block
+      padding: 15px
+      margin-left: 20px
+      border: 1px solid #fff
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -ms-transform:rotate(45deg)
+      -o-transform:rotate(45deg)
+      transform: rotate(45deg)
+      transition: .5s ease
+      position: relative
+      &:hover
+        background-color: #fff
+      &::before
+        content: 'Portfolio'
+        text-decoration: none
+        visibility: hidden
+        opacity: 0
+        font-size: 25px
+        width: 132px
+        margin: 10px auto
+        display: block
+        position: absolute
+        transition: .5s ease
+        transform: rotateZ(-45deg) translate(230%, -60%)
+        color: #fff
+      &::after
+        content: ''
+        visibility: hidden
+        width: 79px
+        height: 79px
+        border: 1px solid #fff
+        position: absolute
+        right: 0
+        bottom: 0
+        z-index: -1
+        transition: .5s ease
+
+    #right-panel-btn:hover:before
+      visibility: visible
+      opacity: 1
+      transform: rotateZ(-45deg) translate(230%, -20%)
+
+    #right-panel-btn:hover:after
+      visibility: visible
+      right: -10px
+      bottom: 10px
+
+    #right-panel-btn:hover .fa
+      color: $accent
+
+    .logo
+      width: 38px
+      height: 38px
+      padding: 20px
+      position: absolute
+      bottom: -60px
+      left: 50%
+      transform: translateX(-50%) rotateZ(45deg)
+      transition: .5s ease
+      border: 1px solid #fff
+      &:hover
+        background-color: #fff
+        cursor: default
+
+      p
+        transform: rotatez(-45deg)
+        text-transform: uppercase
+        font-size: 40px
+        position: absolute
+        top: -25px
+        left: 13px
+
+    .logo:hover p
+      color: $accent
