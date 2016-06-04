@@ -1092,9 +1092,9 @@ th {
     display: none; }
   #right-panel #return-right::after {
     display: none; }
-  #right-panel #gallery {
+  #right-panel .portfolio #gallery {
     flex-direction: column; }
-    #right-panel #gallery .thumb {
+    #right-panel .portfolio #gallery .thumb {
       width: 100%; }
   .buttons a::before {
     display: none; }
