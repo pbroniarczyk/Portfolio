@@ -767,12 +767,13 @@ th {
     margin: 50px 0; }
   #right-panel .portfolio #gallery {
     width: 100%;
-    margin: 50px 0; }
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap; }
     #right-panel .portfolio #gallery .thumb {
       background-color: blue;
       position: relative;
       overflow: hidden;
-      float: left;
       width: 50%;
       height: 350px; }
       #right-panel .portfolio #gallery .thumb img {
@@ -1091,6 +1092,10 @@ th {
     display: none; }
   #right-panel #return-right::after {
     display: none; }
+  #right-panel #gallery {
+    flex-direction: column; }
+    #right-panel #gallery .thumb {
+      width: 100%; }
   .buttons a::before {
     display: none; }
   .buttons a::after {
