@@ -1076,10 +1076,10 @@ th {
   #wrapper .buttons #left-panel-btn:before:before {
     transform: rotateZ(-45deg) translate(0%, -33%);
     color: #375880; }
-  #wrapper .buttons #left-panel-btn .fa {
-    display: none; }
   #wrapper .buttons #left-panel-btn:after {
     display: none; }
+  #wrapper .buttons #left-panel-btn .fa {
+    visibility: hidden; }
   #wrapper .buttons #right-panel-btn:before {
     content: 'Portfolio';
     color: #fff;
@@ -1092,10 +1092,10 @@ th {
   #wrapper .buttons #right-panel-btn:before:before {
     transform: rotateZ(-45deg) translate(0%, -33%);
     color: #375880; }
-  #wrapper .buttons #right-panel-btn .fa {
-    display: none; }
   #wrapper .buttons #right-panel-btn:after {
     display: none; }
+  #wrapper .buttons #right-panel-btn .fa {
+    visibility: hidden; }
   #wrapper .buttons .logo {
     background-color: #fff; }
     #wrapper .buttons .logo p {
