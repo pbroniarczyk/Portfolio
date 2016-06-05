@@ -1073,7 +1073,7 @@ th {
     top: 50%;
     left: 50%;
     display: block; }
-  #wrapper .buttons #left-panel-btn:before:before {
+  #wrapper .buttons #left-panel-btn:hover:before {
     transform: rotateZ(-45deg) translate(0%, -33%);
     color: #375880; }
   #wrapper .buttons #left-panel-btn:after {
@@ -1089,7 +1089,7 @@ th {
     top: 50%;
     left: 50%;
     display: block; }
-  #wrapper .buttons #right-panel-btn:before:before {
+  #wrapper .buttons #right-panel-btn:hover:before {
     transform: rotateZ(-45deg) translate(0%, -33%);
     color: #375880; }
   #wrapper .buttons #right-panel-btn:after {
