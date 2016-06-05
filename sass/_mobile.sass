@@ -9,11 +9,38 @@
   #wrapper
     .buttons
       #left-panel-btn:before
-        display: none
+        content: 'About me'
+        color: #fff
+        visibility: visible
+        transform: rotateZ(-45deg) translate(0%, -33%)
+        border: none
+        top: 50%
+        left: 50%
+        display: block
+      #left-panel-btn:before:before
+        transform: rotateZ(-45deg) translate(0%, -33%)
+        color: $accent
+      #left-panel-btn
+        .fa
+          display: none
       #left-panel-btn:after
         display: none
+
       #right-panel-btn:before
-        display: none
+        content: 'Portfolio'
+        color: #fff
+        visibility: visible
+        transform: rotateZ(-45deg) translate(0%, -33%)
+        border: none
+        top: 50%
+        left: 50%
+        display: block
+      #right-panel-btn:before:before
+        transform: rotateZ(-45deg) translate(0%, -33%)
+        color: $accent
+      #right-panel-btn
+        .fa
+          display: none
       #right-panel-btn:after
         display: none
 
