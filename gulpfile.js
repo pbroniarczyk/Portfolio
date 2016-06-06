@@ -26,17 +26,11 @@ gulp.task('clean_css', function(){
     .pipe(gulp.dest('build/'));
 });
 
-// Minify JS
-gulp.task('scripts', function(){
-  return gulp.src('js/main.js')
-    .pipe(gulp.dest('build/'));
-});
-
 //  Watch
 gulp.task('watch', function(){
-  gulp.watch('js/*.js', ['lint', 'sripts']);
+  gulp.watch('js/*.js', ['lint']);
   gulp.watch('sass/*.sass', ['sass', 'clean_css']);
 });
 
 //  Default
-gulp.task('default', ['lint', 'sass', 'clean_css', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'clean_css', 'watch']);

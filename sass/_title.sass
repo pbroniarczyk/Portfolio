@@ -1,8 +1,6 @@
-#wrapper
+#title
   padding: 50px 100px
   position: relative
-  height: 100vh
-  top: 0
 
   h1
     text-align: center
@@ -44,7 +42,7 @@
       color: #fff
 
     //  LEFT BUTTON
-    #left-panel-btn
+    #about-btn
       display: inline-block
       padding: 15px
       margin-right: 20px
@@ -83,21 +81,21 @@
         transform: rotateZ(-45deg) translate(-280%, -160%)
         color: #fff
 
-    #left-panel-btn:hover:before
+    #about-btn:hover:before
       visibility: visible
       left: -10px
       top: 10px
 
-    #left-panel-btn:hover:after
+    #about-btn:hover:after
       visibility: visible
       opacity: 1
       transform: rotateZ(-45deg) translate(-280%, -120%)
 
-    #left-panel-btn:hover .fa
+    #about-btn:hover .fa
       color: $accent
 
     //  RIGHT BUTTON
-    #right-panel-btn
+    #portfolio-btn
       display: inline-block
       padding: 15px
       margin-left: 20px
@@ -136,17 +134,17 @@
         z-index: -1
         transition: .5s ease
 
-    #right-panel-btn:hover:before
+    #portfolio-btn:hover:before
       visibility: visible
       opacity: 1
       transform: rotateZ(-45deg) translate(230%, -20%)
 
-    #right-panel-btn:hover:after
+    #portfolio-btn:hover:after
       visibility: visible
       right: -10px
       bottom: 10px
 
-    #right-panel-btn:hover .fa
+    #portfolio-btn:hover .fa
       color: $accent
 
     .logo

@@ -2,13 +2,13 @@
 @media (max-width: 768px)
 
   //  GLOBAL
-  #wrapper, #left-panel, #right-panel, .contact
+  #title, #about, #portfolio, .contact
     padding: 20px
 
   //  TITLE PAGE
-  #wrapper
+  #title
     .buttons
-      #left-panel-btn:before
+      #about-btn:before
         content: 'About me'
         color: #fff
         visibility: visible
@@ -17,17 +17,17 @@
         top: 50%
         left: 50%
         display: block
-      #left-panel-btn:hover:before
-        transform: rotateZ(-45deg) translate(0%, -33%)
+      #about-btn:hover:before
+        transform: rotateZ(-45deg) translate(20%, 37%)
         color: $accent
-      #left-panel-btn:after
+      #about-btn:after
         display: none
-      #left-panel-btn
+      #about-btn
         .fa
           visibility: hidden
 
 
-      #right-panel-btn:before
+      #portfolio-btn:before
         content: 'Portfolio'
         color: #fff
         visibility: visible
@@ -36,12 +36,12 @@
         top: 50%
         left: 50%
         display: block
-      #right-panel-btn:hover:before
+      #portfolio-btn:hover:before
         transform: rotateZ(-45deg) translate(0%, -33%)
         color: $accent
-      #right-panel-btn:after
+      #portfolio-btn:after
         display: none
-      #right-panel-btn
+      #portfolio-btn
         .fa
           visibility: hidden
 
@@ -54,8 +54,8 @@
         display: none
 
   //     ABOUT ME PAGE
-  #left-panel
-    #return-left
+  #about
+    #return-about
       &::before
         display: none
       &::after
@@ -70,18 +70,12 @@
         transform: translateX(-90%)
 
   //     PORTFOLIO
-  #right-panel
-    #return-right
+  #portfolio
+    #return-portfolio
       &::before
         display: none
       &::after
         display: none
-
-    .portfolio
-      #gallery
-        flex-direction: column
-        .thumb
-          width: 100%
 
   //    PROJECT
   .buttons
@@ -100,12 +94,12 @@
       font-size: 1.5em !important
 
   // MAIN PAGE
-  #wrapper
+  #title
     left: 0
 
   //   ABOUT ME PAGE
-  #left-panel
-    #return-left
+  #about
+    #return-about
       padding: 7px
       margin-left: 20px
 
@@ -126,8 +120,8 @@
         visibility: hidden
 
   //   PORTFOLIO
-  #right-panel
-    #return-right
+  #portfolio
+    #return-portfolio
       padding: 7px
       margin-left: 20px
 

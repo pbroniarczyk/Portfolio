@@ -1,10 +1,7 @@
-#left-panel
+#about
   padding: 50px 100px
   height: 100%
-  opacity: 0
-  position: absolute
-  top: 0
-  transform: translateX(-100%)
+  display: none
 
   h1
     display: inline-block
@@ -18,7 +15,7 @@
     font-size: 20px
     color: #fff
 
-  #return-left
+  #return-about
     display: inline-block
     padding: 15px
     margin-left: 30px
@@ -54,18 +51,18 @@
       z-index: -1
       transition: .5s ease
 
-  #return-left:hover:before
+  #return-about:hover:before
     visibility: visible
     opacity: 1
     transform: rotateZ(-45deg) translate(150%, -10px)
 
-  #return-left:hover:after
+  #return-about:hover:after
     visibility: visible
     opacity: 1
     right: -10px
     bottom: 10px
 
-  #return-left:hover .fa
+  #return-about:hover .fa
     color: $accent
 
   .about
