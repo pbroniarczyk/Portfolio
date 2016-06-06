@@ -1,12 +1,16 @@
-.contact
+#contact
   text-align: center
   height: 100vh
+  margin-top: 25vh
+
   .contact-content
     position: relative
     top: 50%
     transform: translateY(-50%)
+
   p
     margin-bottom: 20px
+
   .email
     padding: 10px 20px
     margin: 20px auto
@@ -19,6 +23,7 @@
     &:hover
       color: $accent
       background-color: #fff
+
   .contact-icon
     display: flex
     justify-content: space-around
@@ -33,3 +38,32 @@
         -moz-filter: drop-shadow(1px 1px 2px #333)
         -ms-filter: drop-shadow(1px 1px 2px #333)
         filter: drop-shadow(1px 1px 2px #333)
+
+  .back-to-top
+    display: inline-block
+    max-width: 60px
+    margin: 50px auto
+    padding: 10px
+    border: 1px solid #fff
+    -webkit-transform: rotate(-45deg) translateX(-50%)
+    -moz-transform: rotate(-45deg) translateX(-50%)
+    -ms-transform: rotate(-45deg) translateX(-50%)
+    -o-transform: rotate(-45deg) translateX(-50%)
+    transform: rotate(-45deg)
+    transition: .5s ease
+    position: relative
+    &:hover
+      background-color: #fff
+
+    .fa
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      transition: .5s ease
+      font-size: 16px
+      color: #fff
+
+  .back-to-top:hover .fa
+    color: $accent
