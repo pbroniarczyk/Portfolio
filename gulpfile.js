@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     jshint = require('gulp-jshint'),
-    cleanCss = require('gulp-clean-css');
+    cssnano = require('gulp-cssnano');
 
 //  TASKS
 
@@ -19,18 +19,18 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('build/'));
 });
 
-// Minify CSS
-gulp.task('clean_css', function(){
+//  Minify CSS
+gulp.task('cssnano', function(){
   return gulp.src('css/main.css')
-    .pipe(cleanCss())
+    .pipe(cssnano())
     .pipe(gulp.dest('build/'));
 });
 
 //  Watch
 gulp.task('watch', function(){
   gulp.watch('js/*.js', ['lint']);
-  gulp.watch('sass/*.sass', ['sass', 'clean_css']);
+  gulp.watch('sass/*.sass', ['sass', 'cssnano']);
 });
 
 //  Default
-gulp.task('default', ['lint', 'sass', 'clean_css', 'watch']);
+gulp.task('default', ['lint', 'sass', 'cssnano', 'watch']);
