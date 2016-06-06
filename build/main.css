@@ -11,13 +11,17 @@ body {
     font-size: 4em;
     font-weight: 100;
     margin-bottom: 0; }
+  body h2 {
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: 0; }
   body #title, body #about, body #portfolio {
     transition: .5s ease;
     -webkit-animation-duration: .2s;
     -moz-animation-duration: .2s;
     -ms-animation-duration: .2s;
     animation-duration: .2s; }
-    body #title #about > h1, body #title #portfolio > h1, body #about #about > h1, body #about #portfolio > h1, body #portfolio #about > h1, body #portfolio #portfolio > h1 {
+    body #title #about > h2, body #title #portfolio > h2, body #about #about > h2, body #about #portfolio > h2, body #portfolio #about > h2, body #portfolio #portfolio > h2 {
       display: inline; }
 
 ::-webkit-scrollbar {
@@ -538,7 +542,7 @@ th {
   padding: 50px 100px;
   height: 100%;
   display: none; }
-  #about h1 {
+  #about h2 {
     display: inline-block; }
   #about .fa {
     -webkit-transform: rotate(-45deg);
@@ -704,7 +708,7 @@ th {
   padding: 50px 100px;
   height: 100%;
   display: none; }
-  #portfolio h1 {
+  #portfolio h2 {
     display: inline-block; }
   #portfolio .fa {
     -webkit-transform: rotate(135deg);

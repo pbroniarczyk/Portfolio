@@ -1,54 +1,29 @@
 window.onload = init();
 function init() {
 
-  // TRANSITION BETWEEN PANELS
-  var lBtn = document.getElementById('left-panel-btn');
-      rBtn = document.getElementById('right-panel-btn');
-      mainWrapper = document.getElementById('wrapper');
+  // PAGE TRANSITION
+  var leftBtn = document.getElementById('about-btn'),
+      rightBtn = document.getElementById('portfolio-btn'),
+      returnLeft = document.getElementById('return-about'),
+      returnRight = document.getElementById('return-portfolio');
 
+  function fadeIn(){
+    var currentAttrValue = $(this).attr('href');
 
-//  ABOUT PAGE
-  lBtn.onclick = function leftPanel() {
-    document.getElementById('left-panel').setAttribute(
-      'style', 'transform: translateX(0); opacity: 1');
-
-    $('#wrapper').css({
-      'transform': 'translateX(100%)',
-      'opacity': '0'
+    $('.tabs ' + currentAttrValue).css({
+      display: 'block'
+    }).addClass('animate fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass('animate fadeInDown');
     });
-  };
 
-//  PORTFOLIO PAGEt
-  rBtn.onclick = function rightPanel() {
-    document.getElementById('right-panel').setAttribute(
-      'style', 'transform: translateX(0); opacity: 1');
+    $('.tabs ' + currentAttrValue).siblings().hide(1);
+  }
 
-    $('#wrapper').css({
-      'transform': 'translateX(-100%)',
-      'opacity': '0'
-    });
-  };
+  leftBtn.addEventListener('click', fadeIn, false);
+  rightBtn.addEventListener('click', fadeIn, false);
+  returnLeft.addEventListener('click', fadeIn, false);
+  returnRight.addEventListener('click', fadeIn, false);
 
-// MAIN PAGE
-  document.getElementById('return-left').onclick = function(){
-    document.getElementById('left-panel').setAttribute(
-      'style', 'transform: translateX(-100%); opacity: 0'
-    );
-    $('#wrapper').css({
-      'transform': 'translateX(0)',
-      'opacity': '1'
-    });
-  };
-
-  document.getElementById('return-right').onclick = function(){
-    document.getElementById('right-panel').setAttribute(
-      'style', 'transform: translateX(100%); opacity: 0'
-    );
-    $('#wrapper').css({
-      'transform': 'translateX(0)',
-      'opacity': '1'
-    });
-  };
 
   // GALLERY HOVER OVERLAY
   $(function hover(){
