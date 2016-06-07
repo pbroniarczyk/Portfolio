@@ -2,7 +2,7 @@
   padding: 50px 100px
   height: 100%
   display: none
-  
+
   h2
     display: inline-block
 
@@ -87,51 +87,51 @@
           top: 0
           left: 0
 
-        .overlay
-          position: absolute
-          top: 0
-          bottom: 0
-          right: 0
-          width: 50%
-          text-align: center
-          background-color: rgba(255, 255, 255, .8)
-          box-sizing: border-box
-          padding: 20px
-          transition: .5s ease
-          box-shadow: -2px 4px 12px #272727
-          z-index: 2
-          transform: translateX(100%)
-          opacity: 0
-          &::after
-            content: ''
-            width: 0
-            height: 0
-            border-top: 20px solid transparent
-            border-bottom: 20px solid transparent
-            border-right: 20px solid rgba(255, 255, 255, .8)
-            position: absolute
-            left: -20px
-            top: 50%
-            -webkit-filter: drop-shadow(-4px 0px 2px #272727)
-            -moz-filter: drop-shadow(-4px 0px 2px #272727)
-            -ms-filter: drop-shadow(-4px 0px 2px #272727)
-            filter: drop-shadow(-4px 0px 2px #272727)
-            z-index: 1
-            transform: translateY(-50%)
+    .overlay
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      width: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, .8)
+      box-sizing: border-box
+      padding: 20px
+      transition: .5s ease
+      box-shadow: -2px 4px 12px #272727
+      z-index: 2
+      transform: translateX(100%)
+      opacity: 0
+      &::after
+        content: ''
+        width: 0
+        height: 0
+        border-top: 20px solid transparent
+        border-bottom: 20px solid transparent
+        border-right: 20px solid rgba(255, 255, 255, .8)
+        position: absolute
+        left: -20px
+        top: 50%
+        -webkit-filter: drop-shadow(-4px 0px 2px #272727)
+        -moz-filter: drop-shadow(-4px 0px 2px #272727)
+        -ms-filter: drop-shadow(-4px 0px 2px #272727)
+        filter: drop-shadow(-4px 0px 2px #272727)
+        z-index: 1
+        transform: translateY(-50%)
 
-          h3
-            color: $accent
-          p
-            color: #333
-          a
-            color: $accent
-            padding: 10px 20px
-            text-decoration: none
-            border: 1px solid $accent
-            transition: .5s ease
-            &:hover
-              background-color: $accent
-              color: #fff
+      h3
+        color: $accent
+      p
+        color: #333
+      a
+        color: $accent
+        padding: 10px 20px
+        text-decoration: none
+        border: 1px solid $accent
+        transition: .5s ease
+        &:hover
+          background-color: $accent
+          color: #fff
 
     .clear
       &::after

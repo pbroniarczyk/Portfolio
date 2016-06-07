@@ -4,6 +4,10 @@
   //  GLOBAL
   #title, #about, #portfolio, .contact
     padding: 20px
+    h2
+      vertical-align: super
+    .nav-btn
+      vertical-align: sub
 
   //  TITLE PAGE
   #title
@@ -26,18 +30,19 @@
         .fa
           visibility: hidden
 
-
       #portfolio-btn:before
         content: 'Portfolio'
         color: #fff
+        font-size: 18px
         visibility: visible
-        transform: rotateZ(-45deg) translate(0%, -33%)
+        opacity: 1
+        transform: rotateZ(-45deg) translate(-2%, -290%)
         border: none
         top: 50%
         left: 50%
         display: block
       #portfolio-btn:hover:before
-        transform: rotateZ(-45deg) translate(0%, -33%)
+        transform: rotateZ(-45deg) translate(-2%, -290%)
         color: $accent
       #portfolio-btn:after
         display: none
@@ -47,6 +52,10 @@
 
       .logo
         background-color: #fff
+        &::before
+          display: none
+        &::after
+          display: none
         p
           color: $accent
 
@@ -71,11 +80,24 @@
 
   //     PORTFOLIO
   #portfolio
-    #return-portfolio
-      &::before
-        display: none
-      &::after
-        display: none
+    .portfolio
+      #return-portfolio
+        &::before
+          display: none
+        &::after
+          display: none
+
+      #gallery
+        display: flex
+        flex-direction: column
+        .thumb
+          width: 100%
+
+      .overlay
+        left: 0
+        width: 100%
+        &::after
+          display: none
 
   //    PROJECT
   .buttons
@@ -111,8 +133,8 @@
         margin-right: 20px
         transform: translateY(20px)
         &:last-of-type
-          margin-right: 3px
-      h2
+          margin-right: 10px
+      h3
         display: inline-block
       p
         text-align: justify
@@ -135,7 +157,7 @@
 @media (max-width: 1010px)
 
   .proj-desc h1
-    font-size: 2em
+    font-size: 2.3em !important
 
 @media (max-width: 800px)
   .project-view
@@ -147,6 +169,20 @@
       padding-bottom: 50px
       .buttons
         top: 0
+      a
+        text-decoration: none
+
+      #portfolio-btn
+        &::before
+          display: none
+        &::after
+          display: none
+      #about-btn
+        &::before
+          display: none
+        &::after
+          display: none
+
     .proj-gallery
       width: 100%
       transform: translateX(0)

@@ -815,50 +815,50 @@ th {
         display: block;
         top: 0;
         left: 0; }
-      #portfolio .portfolio #gallery .thumb .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 50%;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.8);
-        box-sizing: border-box;
-        padding: 20px;
-        transition: .5s ease;
-        box-shadow: -2px 4px 12px #272727;
-        z-index: 2;
-        transform: translateX(100%);
-        opacity: 0; }
-        #portfolio .portfolio #gallery .thumb .overlay::after {
-          content: '';
-          width: 0;
-          height: 0;
-          border-top: 20px solid transparent;
-          border-bottom: 20px solid transparent;
-          border-right: 20px solid rgba(255, 255, 255, 0.8);
-          position: absolute;
-          left: -20px;
-          top: 50%;
-          -webkit-filter: drop-shadow(-4px 0px 2px #272727);
-          -moz-filter: drop-shadow(-4px 0px 2px #272727);
-          -ms-filter: drop-shadow(-4px 0px 2px #272727);
-          filter: drop-shadow(-4px 0px 2px #272727);
-          z-index: 1;
-          transform: translateY(-50%); }
-        #portfolio .portfolio #gallery .thumb .overlay h3 {
-          color: #375880; }
-        #portfolio .portfolio #gallery .thumb .overlay p {
-          color: #333; }
-        #portfolio .portfolio #gallery .thumb .overlay a {
-          color: #375880;
-          padding: 10px 20px;
-          text-decoration: none;
-          border: 1px solid #375880;
-          transition: .5s ease; }
-          #portfolio .portfolio #gallery .thumb .overlay a:hover {
-            background-color: #375880;
-            color: #fff; }
+  #portfolio .portfolio .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    padding: 20px;
+    transition: .5s ease;
+    box-shadow: -2px 4px 12px #272727;
+    z-index: 2;
+    transform: translateX(100%);
+    opacity: 0; }
+    #portfolio .portfolio .overlay::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-right: 20px solid rgba(255, 255, 255, 0.8);
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      -webkit-filter: drop-shadow(-4px 0px 2px #272727);
+      -moz-filter: drop-shadow(-4px 0px 2px #272727);
+      -ms-filter: drop-shadow(-4px 0px 2px #272727);
+      filter: drop-shadow(-4px 0px 2px #272727);
+      z-index: 1;
+      transform: translateY(-50%); }
+    #portfolio .portfolio .overlay h3 {
+      color: #375880; }
+    #portfolio .portfolio .overlay p {
+      color: #333; }
+    #portfolio .portfolio .overlay a {
+      color: #375880;
+      padding: 10px 20px;
+      text-decoration: none;
+      border: 1px solid #375880;
+      transition: .5s ease; }
+      #portfolio .portfolio .overlay a:hover {
+        background-color: #375880;
+        color: #fff; }
   #portfolio .portfolio .clear::after {
     content: '';
     display: block;
@@ -1065,13 +1065,15 @@ th {
 #contact {
   text-align: center;
   height: 100vh;
-  margin-top: 25vh; }
+  max-width: 500px;
+  margin: 50vh auto 0; }
   #contact .contact-content {
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
   #contact p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: justify; }
   #contact .email {
     padding: 10px 20px;
     margin: 20px auto;
@@ -1128,6 +1130,10 @@ th {
 @media (max-width: 768px) {
   #title, #about, #portfolio, .contact {
     padding: 20px; }
+    #title h2, #about h2, #portfolio h2, .contact h2 {
+      vertical-align: super; }
+    #title .nav-btn, #about .nav-btn, #portfolio .nav-btn, .contact .nav-btn {
+      vertical-align: sub; }
   #title .buttons #about-btn:before {
     content: 'About me';
     color: #fff;
@@ -1147,14 +1153,16 @@ th {
   #title .buttons #portfolio-btn:before {
     content: 'Portfolio';
     color: #fff;
+    font-size: 18px;
     visibility: visible;
-    transform: rotateZ(-45deg) translate(0%, -33%);
+    opacity: 1;
+    transform: rotateZ(-45deg) translate(-2%, -290%);
     border: none;
     top: 50%;
     left: 50%;
     display: block; }
   #title .buttons #portfolio-btn:hover:before {
-    transform: rotateZ(-45deg) translate(0%, -33%);
+    transform: rotateZ(-45deg) translate(-2%, -290%);
     color: #375880; }
   #title .buttons #portfolio-btn:after {
     display: none; }
@@ -1162,6 +1170,10 @@ th {
     visibility: hidden; }
   #title .buttons .logo {
     background-color: #fff; }
+    #title .buttons .logo::before {
+      display: none; }
+    #title .buttons .logo::after {
+      display: none; }
     #title .buttons .logo p {
       color: #375880; }
   #title .buttons hr {
@@ -1176,10 +1188,20 @@ th {
       margin: 50px 0;
       left: 50%;
       transform: translateX(-90%); }
-  #portfolio #return-portfolio::before {
+  #portfolio .portfolio #return-portfolio::before {
     display: none; }
-  #portfolio #return-portfolio::after {
+  #portfolio .portfolio #return-portfolio::after {
     display: none; }
+  #portfolio .portfolio #gallery {
+    display: flex;
+    flex-direction: column; }
+    #portfolio .portfolio #gallery .thumb {
+      width: 100%; }
+  #portfolio .portfolio .overlay {
+    left: 0;
+    width: 100%; }
+    #portfolio .portfolio .overlay::after {
+      display: none; }
   .buttons a::before {
     display: none; }
   .buttons a::after {
@@ -1203,8 +1225,8 @@ th {
       margin-right: 20px;
       transform: translateY(20px); }
       #about li .icon:last-of-type {
-        margin-right: 3px; }
-    #about li h2 {
+        margin-right: 10px; }
+    #about li h3 {
       display: inline-block; }
     #about li p {
       text-align: justify; }
@@ -1220,7 +1242,7 @@ th {
 
 @media (max-width: 1010px) {
   .proj-desc h1 {
-    font-size: 2em; } }
+    font-size: 2.3em !important; } }
 
 @media (max-width: 800px) {
   .project-view {
@@ -1232,6 +1254,16 @@ th {
       padding-bottom: 50px; }
       .project-view .proj-desc .buttons {
         top: 0; }
+      .project-view .proj-desc a {
+        text-decoration: none; }
+      .project-view .proj-desc #portfolio-btn::before {
+        display: none; }
+      .project-view .proj-desc #portfolio-btn::after {
+        display: none; }
+      .project-view .proj-desc #about-btn::before {
+        display: none; }
+      .project-view .proj-desc #about-btn::after {
+        display: none; }
     .project-view .proj-gallery {
       width: 100%;
       transform: translateX(0); } }

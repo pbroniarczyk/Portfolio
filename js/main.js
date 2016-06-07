@@ -6,34 +6,34 @@ function init() {
       returnLeft = document.getElementById('return-about'),
       returnRight = document.getElementById('return-portfolio');
 
-  function fadeIn(){
+  leftBtn.addEventListener('click', fadeInLeft, false);
+  rightBtn.addEventListener('click', fadeInRight, false);
+  returnLeft.addEventListener('click', fadeInRight, false);
+  returnRight.addEventListener('click', fadeInLeft, false);
+
+  function fadeInLeft(){
     var currentAttrValue = $(this).attr('href');
 
     $('.tabs ' + currentAttrValue).css({
       display: 'block'
-    }).addClass('animate fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      $(this).removeClass('animate fadeInDown');
+    }).addClass('animate fadeInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass('animate fadeInLeft');
     });
 
     $('.tabs ' + currentAttrValue).siblings().hide(1);
   }
 
-  /*function fadeInRight() {
+  function fadeInRight(){
     var currentAttrValue = $(this).attr('href');
 
     $('.tabs ' + currentAttrValue).css({
       display: 'block'
-    }).addClass('animate fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      $(this).removeClass('animate fadeInDown');
+    }).addClass('animate fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass('animate fadeInRight');
     });
 
     $('.tabs ' + currentAttrValue).siblings().hide(1);
-  }*/
-
-  leftBtn.addEventListener('click', fadeIn, false);
-  rightBtn.addEventListener('click', fadeIn, false);
-  returnLeft.addEventListener('click', fadeIn, false);
-  returnRight.addEventListener('click', fadeIn, false);
+  }
 
   // GALLERY HOVER OVERLAY
   $(function hover(){
