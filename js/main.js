@@ -6,11 +6,6 @@ function init() {
       returnLeft = document.getElementById('return-about'),
       returnRight = document.getElementById('return-portfolio');
 
-  leftBtn.addEventListener('click', fadeInLeft, false);
-  rightBtn.addEventListener('click', fadeInRight, false);
-  returnLeft.addEventListener('click', fadeInRight, false);
-  returnRight.addEventListener('click', fadeInLeft, false);
-
   function fadeInLeft(){
     var currentAttrValue = $(this).attr('href');
 
@@ -34,6 +29,11 @@ function init() {
 
     $('.tabs ' + currentAttrValue).siblings().hide(1);
   }
+
+  leftBtn.addEventListener('click', fadeInLeft, false);
+  rightBtn.addEventListener('click', fadeInRight, false);
+  returnLeft.addEventListener('click', fadeInRight, false);
+  returnRight.addEventListener('click', fadeInLeft, false);
 
   // GALLERY HOVER OVERLAY
   $(function hover(){
