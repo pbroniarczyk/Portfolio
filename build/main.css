@@ -579,7 +579,8 @@ th {
 #about {
   display: none; }
   #about h2 {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
   #about .fa {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -664,7 +665,7 @@ th {
       background-color: #fff;
       color: #375880; }
   #about .back-to-top {
-    display: inline-block;
+    display: none;
     max-width: 60px;
     margin: 0 auto 50px;
     padding: 10px;
@@ -689,13 +690,48 @@ th {
       font-size: 16px; }
   #about .back-to-top:hover .fa {
     color: #375880; }
+  #about .BTT-visible {
+    display: inline-block; }
 
 .workflow {
-  margin: 100px 0; }
+  margin: 50px 0; }
+  .workflow h2 {
+    cursor: pointer; }
+    .workflow h2::after {
+      content: '';
+      display: block;
+      visibility: visible;
+      width: 230px;
+      height: 2px;
+      background: #fff; }
+  .workflow .toggle-arrow {
+    display: block;
+    visibility: visible;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    transform: rotateZ(-90deg);
+    position: absolute;
+    bottom: -13px;
+    right: 0;
+    transition: 1s ease; }
+  .workflow .toggle-arrow-down {
+    display: block;
+    visibility: visible;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    transform: rotateZ(-90deg) translateX(8px) rotateY(180deg);
+    position: absolute; }
   .workflow .accordion {
     margin: 50px auto 0;
     max-width: 800px;
-    padding: 0; }
+    padding: 0;
+    display: none; }
     .workflow .accordion li {
       list-style-type: none;
       padding: 1px 0 1px 10px;

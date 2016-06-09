@@ -6,6 +6,10 @@ function init() {
       returnLeft = document.getElementById('return-about'),
       returnRight = document.getElementById('return-portfolio');
 
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+
   function fadeInLeft(){
     var currentAttrValue = $(this).attr('href');
 
@@ -14,7 +18,7 @@ function init() {
     }).addClass('animate fadeInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass('animate fadeInLeft');
     });
-
+    scrollTop();
     $('.tabs ' + currentAttrValue).siblings().hide(1);
   }
 
@@ -26,7 +30,7 @@ function init() {
     }).addClass('animate fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass('animate fadeInRight');
     });
-
+    scrollTop();
     $('.tabs ' + currentAttrValue).siblings().hide(1);
   }
 
@@ -49,6 +53,12 @@ function init() {
         'opacity': 0
       });
     });
+  });
+
+  $('.accordion-btn').on('click', function(){
+    $('.accordion').slideToggle(500);
+    $('.toggle-arrow').toggleClass('toggle-arrow-down');
+    $('#about .back-to-top').toggleClass('BTT-visible');
   });
 
 }

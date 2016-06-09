@@ -1,10 +1,45 @@
 .workflow
-  margin: 100px 0
+  margin: 50px 0
+
+  h2
+    cursor: pointer
+    &::after
+      content: ''
+      display: block
+      visibility: visible
+      width: 230px
+      height: 2px
+      background: #fff
+
+  .toggle-arrow
+    display: block
+    visibility: visible
+    width: 0
+    height: 0
+    border-top: 10px solid transparent
+    border-bottom: 10px solid transparent
+    border-right: 10px solid #fff
+    transform: rotateZ(-90deg)
+    position: absolute
+    bottom: -13px
+    right: 0
+    transition: 1s ease
+  .toggle-arrow-down
+    display: block
+    visibility: visible
+    width: 0
+    height: 0
+    border-top: 10px solid transparent
+    border-bottom: 10px solid transparent
+    border-right: 10px solid #fff
+    transform: rotateZ(-90deg) translateX(8px) rotateY(180deg)
+    position: absolute
 
   .accordion
     margin: 50px auto 0
     max-width: 800px
     padding: 0
+    display: none
     li
       list-style-type: none
       padding:  1px 0 1px 10px

@@ -3,6 +3,7 @@
 
   h2
     display: inline-block
+    position: relative
 
   .fa
     -webkit-transform: rotate(-45deg)
@@ -66,7 +67,7 @@
   .about
     display: flex
     justify-content: space-between
-    
+
     p
       text-align: justify
       margin: 50px 0
@@ -101,7 +102,7 @@
       color: $accent
 
   .back-to-top
-    display: inline-block
+    display: none
     max-width: 60px
     margin: 0 auto 50px
     padding: 10px
@@ -128,3 +129,6 @@
 
   .back-to-top:hover .fa
     color: $accent
+
+  .BTT-visible
+    display: inline-block
