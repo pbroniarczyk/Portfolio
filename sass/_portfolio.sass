@@ -3,6 +3,39 @@
 
   h2
     display: inline-block
+    cursor: pointer
+    position: relative
+    &::after
+      content: ''
+      display: block
+      visibility: visible
+      width: 145px
+      height: 2px
+      background: #fff
+
+  .toggle-arrow
+    display: block
+    visibility: visible
+    width: 0
+    height: 0
+    border-top: 10px solid transparent
+    border-bottom: 10px solid transparent
+    border-right: 10px solid #fff
+    transform: rotateZ(-90deg)
+    position: absolute
+    bottom: -13px
+    right: 0
+    transition: 1s ease
+  .toggle-arrow-down
+    display: block
+    visibility: visible
+    width: 0
+    height: 0
+    border-top: 10px solid transparent
+    border-bottom: 10px solid transparent
+    border-right: 10px solid #fff
+    transform: rotateZ(-90deg) translateX(8px) rotateY(180deg)
+    position: absolute
 
   .fa
     -webkit-transform: rotate(135deg)
@@ -72,6 +105,8 @@
     #gallery
       width: 100%
       margin: 50px 0
+      display: none
+
       .thumb
         background-color: blue
         position: relative
@@ -138,7 +173,7 @@
         clear: both
 
   .back-to-top
-    display: inline-block
+    display: none
     max-width: 60px
     margin: 0 auto 50px
     padding: 10px
@@ -165,3 +200,6 @@
 
   .back-to-top:hover .fa
     color: $accent
+
+  .BTT-visible
+    display: inline-block

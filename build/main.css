@@ -655,13 +655,14 @@ th {
         top: 25px;
         left: 45px;
         z-index: -1; }
-  #about button {
+  #about .button {
     background-color: transparent;
     color: #fff;
     padding: 10px 20px;
     border: 1px solid #fff;
-    transition: .5s ease; }
-    #about button:hover {
+    transition: .5s ease;
+    text-decoration: none; }
+    #about .button:hover {
       background-color: #fff;
       color: #375880; }
   #about .back-to-top {
@@ -779,7 +780,39 @@ th {
 #portfolio {
   display: none; }
   #portfolio h2 {
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer;
+    position: relative; }
+    #portfolio h2::after {
+      content: '';
+      display: block;
+      visibility: visible;
+      width: 145px;
+      height: 2px;
+      background: #fff; }
+  #portfolio .toggle-arrow {
+    display: block;
+    visibility: visible;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    transform: rotateZ(-90deg);
+    position: absolute;
+    bottom: -13px;
+    right: 0;
+    transition: 1s ease; }
+  #portfolio .toggle-arrow-down {
+    display: block;
+    visibility: visible;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    transform: rotateZ(-90deg) translateX(8px) rotateY(180deg);
+    position: absolute; }
   #portfolio .fa {
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
@@ -837,7 +870,8 @@ th {
     margin: 50px 0; }
   #portfolio .portfolio #gallery {
     width: 100%;
-    margin: 50px 0; }
+    margin: 50px 0;
+    display: none; }
     #portfolio .portfolio #gallery .thumb {
       background-color: blue;
       position: relative;
@@ -899,7 +933,7 @@ th {
     display: block;
     clear: both; }
   #portfolio .back-to-top {
-    display: inline-block;
+    display: none;
     max-width: 60px;
     margin: 0 auto 50px;
     padding: 10px;
@@ -924,6 +958,8 @@ th {
       font-size: 16px; }
   #portfolio .back-to-top:hover .fa {
     color: #375880; }
+  #portfolio .BTT-visible {
+    display: inline-block; }
 
 .proj-desc {
   background-color: #fff;

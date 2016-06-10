@@ -61,4 +61,10 @@ function init() {
     $('#about .back-to-top').toggleClass('BTT-visible');
   });
 
+  $('.gallery-btn').on('click', function(){
+    $('#gallery').slideToggle(500);
+    $('.toggle-arrow').toggleClass('toggle-arrow-down');
+    $('#portfolio .back-to-top').toggleClass('BTT-visible');
+  });
+
 }
