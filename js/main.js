@@ -1,36 +1,39 @@
 window.onload = init();
 function init() {
+  $(function(){
+    $('#gallery').css('display', 'none');
+  });
 
   var leftBtn = document.getElementById('about-btn'),
       rightBtn = document.getElementById('portfolio-btn'),
       returnLeft = document.getElementById('return-about'),
       returnRight = document.getElementById('return-portfolio');
 
-  function scrollTop() {
-    window.scrollTo(0, 0);
-  }
-
+  //  Add class animate for About page & hide other
   function fadeInLeft(){
     var currentAttrValue = $(this).attr('href');
 
+    // Remove added class after animation is finished
     $('.tabs ' + currentAttrValue).css({
       display: 'block'
     }).addClass('animate fadeInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass('animate fadeInLeft');
     });
-    scrollTop();
+
     $('.tabs ' + currentAttrValue).siblings().hide(1);
   }
 
+    //  Add class animate for Portfolio page & hide other
   function fadeInRight(){
     var currentAttrValue = $(this).attr('href');
 
+    // Remove added class after animation is finished
     $('.tabs ' + currentAttrValue).css({
       display: 'block'
     }).addClass('animate fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass('animate fadeInRight');
     });
-    scrollTop();
+
     $('.tabs ' + currentAttrValue).siblings().hide(1);
   }
 
@@ -55,6 +58,7 @@ function init() {
     });
   });
 
+  // Toggle information panels for about page & portfolio
   $('.accordion-btn').on('click', function(){
     $('.accordion').slideToggle(500);
     $('.toggle-arrow').toggleClass('toggle-arrow-down');

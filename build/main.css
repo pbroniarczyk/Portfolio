@@ -1296,6 +1296,8 @@ th {
   #about #return-about {
     padding: 7px;
     margin-left: 20px; }
+  #about h2::after {
+    width: 135px; }
   #about li {
     margin-left: 0; }
     #about li .icon {
@@ -1313,7 +1315,9 @@ th {
       visibility: hidden; }
   #portfolio #return-portfolio {
     padding: 7px;
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  #portfolio h2::after {
+    width: 85px; } }
 
 @media (max-height: 520px) {
   body h1 {
