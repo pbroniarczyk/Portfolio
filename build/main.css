@@ -397,19 +397,34 @@ th {
 #title {
   position: relative; }
   #title h1 {
-    text-align: center; }
+    text-align: center;
+    visibility: hidden;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s; }
   #title h2 {
     text-align: center;
     font-size: 3em;
     font-weight: 100;
-    margin-top: 0; }
+    margin-top: 0;
+    visibility: hidden;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-delay: .75s;
+    animation-delay: .75s; }
   #title .buttons {
     max-width: 400px;
     margin: 50px auto;
     position: relative;
     top: 10vh;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    visibility: hidden;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
     #title .buttons .hr-about {
       position: absolute;
       top: 39%;
@@ -531,7 +546,7 @@ th {
       color: #fff; }
       #title .buttons .logo::before {
         content: '';
-        visibility: visible;
+        visibility: hidden;
         display: block;
         border: 1px solid #fff;
         width: 78px;
@@ -970,7 +985,24 @@ th {
   box-sizing: border-box; }
   .proj-desc a {
     color: #375880;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid #375880;
+    transition: .5s ease;
+    position: relative; }
+    .proj-desc a::after {
+      content: '>';
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #fff; }
+    .proj-desc a:hover {
+      background-color: #375880;
+      color: #fff;
+      padding-right: 50px; }
   .proj-desc h1, .proj-desc p {
     color: #333; }
 
