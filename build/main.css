@@ -987,7 +987,7 @@ th {
   height: 100%;
   padding: 0 50px;
   box-sizing: border-box; }
-  .proj-desc a {
+  .proj-desc .link {
     color: #375880;
     text-decoration: none;
     padding: 10px 20px;
@@ -996,17 +996,24 @@ th {
     border: 1px solid #375880;
     transition: .5s ease;
     position: relative; }
-    .proj-desc a::after {
+    .proj-desc .link::after {
       content: '>';
-      visibility: visible;
+      visibility: hidden;
+      opacity: 0;
       position: absolute;
       top: 0;
       right: 0;
-      color: #fff; }
-    .proj-desc a:hover {
+      padding: 10px;
+      color: #375880;
+      background-color: #fff;
+      transition: .5s ease; }
+    .proj-desc .link:hover {
       background-color: #375880;
       color: #fff;
       padding-right: 50px; }
+  .proj-desc .link:hover::after {
+    visibility: visible;
+    opacity: 1; }
   .proj-desc h1, .proj-desc p {
     color: #333; }
 
@@ -1023,7 +1030,7 @@ th {
     max-width: 400px;
     margin: 50px auto;
     position: relative;
-    top: 10vh;
+    top: 5vh;
     display: flex;
     justify-content: center; }
     .proj-desc .buttons .non-prev::before, .proj-desc .buttons .non-next::before {
