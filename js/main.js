@@ -2,11 +2,11 @@ window.onload = init();
 function init() {
   $(function(){
     $('#gallery').css('display', 'none');
-    $('#title').children().addClass('animate fadeInUp');
+    /*$('#title').children().addClass('animate fadeInUp');
 
     if ($('#title').children().hasClass('animate fadeInUp')) {
       $('#title').children().css('visibility', 'visible');
-    }
+    }*/
   });
 
   var leftBtn = document.getElementById('about-btn'),

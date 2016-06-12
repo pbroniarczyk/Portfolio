@@ -3,7 +3,6 @@
 
   h1
     text-align: center
-    visibility: hidden
     -webkit-animation-duration: .5s
     animation-duration: .5s
     -webkit-animation-delay: .5s
@@ -15,7 +14,6 @@
       size: 3em
       weight: 100
     margin-top: 0
-    visibility: hidden
     -webkit-animation-duration: .5s
     animation-duration: .5s
     -webkit-animation-delay: .75s
@@ -28,7 +26,6 @@
     top: 10vh
     display: flex
     justify-content: center
-    visibility: hidden
     -webkit-animation-duration: .5s
     animation-duration: .5s
     -webkit-animation-delay: 1s
@@ -73,6 +70,7 @@
       &::before
         content: ''
         visibility: hidden
+        opacity: 0
         width: 79px
         height: 79px
         border: 1px solid #fff
@@ -97,6 +95,7 @@
 
     #about-btn:hover:before
       visibility: visible
+      opacity: 1
       left: -10px
       top: 10px
 
@@ -139,6 +138,7 @@
       &::after
         content: ''
         visibility: hidden
+        opacity: 0
         width: 79px
         height: 79px
         border: 1px solid #fff
@@ -155,12 +155,15 @@
 
     #portfolio-btn:hover:after
       visibility: visible
+      opacity: 1
       right: -10px
       bottom: 10px
 
     #portfolio-btn:hover .fa
       color: $accent
 
+
+    // CONTACT BUTTON
     .logo
       width: 38px
       height: 38px
@@ -175,6 +178,7 @@
       &::before
         content: ''
         visibility: hidden
+        opacity: 0
         display: block
         border: 1px solid #fff
         width: 78px
@@ -212,6 +216,8 @@
     .logo:hover::before
       top: 10px
       left: 10px
+      visibility: visible
+      opacity: 1
 
     .logo:hover::after
       top: 90px
