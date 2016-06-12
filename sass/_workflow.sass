@@ -24,6 +24,7 @@
     bottom: -13px
     right: 0
     transition: 1s ease
+    
   .toggle-arrow-down
     display: block
     visibility: visible
@@ -49,9 +50,10 @@
       cursor: default
       &:last-child
         margin-bottom: none
-        span::after
+        .icon::after
           visibility: hidden
-      span
+
+      .icon
         display: inline-block
         width: 62px
         height: 62px
@@ -75,14 +77,11 @@
       p
         margin: 20px 0
 
-      &:nth-child(1) span
+      &:nth-child(1) .icon
         background-image: url(../img/icon/pencil.png)
-      &:nth-child(2) span
+      &:nth-child(2) .icon
         background-image: url(../img/icon/tools.png)
-      &:nth-child(3) span
-        background-image: url(../img/icon/settings.png)
-      &:nth-child(4) span
+      &:nth-child(3) .icon
         background-image: url(../img/icon/code.png)
-      &:nth-child(5) span
+      &:nth-child(4) .icon
         background-image: url(../img/icon/check.png)
-    
