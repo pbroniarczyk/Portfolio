@@ -1253,6 +1253,7 @@ th {
     content: 'About me';
     color: #fff;
     visibility: visible;
+    opacity: 1;
     transform: rotateZ(-45deg) translate(0%, -33%);
     border: none;
     top: 50%;
