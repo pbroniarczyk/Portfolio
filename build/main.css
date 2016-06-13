@@ -987,6 +987,9 @@ th {
   height: 100%;
   padding: 0 50px;
   box-sizing: border-box; }
+  .proj-desc .marked {
+    color: #375880;
+    font-weight: bold; }
   .proj-desc .link {
     color: #375880;
     text-decoration: none;
@@ -997,7 +1000,7 @@ th {
     transition: .5s ease;
     position: relative; }
     .proj-desc .link::after {
-      content: '>';
+      content: '>>';
       visibility: hidden;
       opacity: 0;
       position: absolute;
