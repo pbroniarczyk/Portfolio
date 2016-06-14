@@ -82,24 +82,24 @@ function init() {
 // SWAPPING BACKGROUNDS
 $('#about-btn').on('click', function() {
   $('body').css({
-    'background-position-x': '0'
+    'background-position': '0 -20px'
   });
 });
 
 $('#return-about').on('click', function() {
   $('body').css({
-    'background-position-x': '-370px'
+    'background-position': '-370px -20px'
   });
 });
 
 $('#portfolio-btn').on('click', function() {
   $('body').css({
-    'background-position-x': '-740px'
+    'background-position': '-740px -20px'
   });
 });
 
 $('#return-portfolio').on('click', function() {
   $('body').css({
-    'background-position-x': '-370px'
+    'background-position': '-370px -20px'
   });
 });

@@ -1,7 +1,6 @@
 body {
   background-image: url(../img/bg.jpg);
-  background-position-x: -370px;
-  background-position-y: -20px;
+  background-position: -370px -20px;
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
   margin: 0px;
@@ -1229,10 +1228,7 @@ th {
       color: #fff;
       transition: .5s ease; }
       #contact .contact-icon .fa:hover {
-        -webkit-filter: drop-shadow(1px 1px 2px #333);
-        -moz-filter: drop-shadow(1px 1px 2px #333);
-        -ms-filter: drop-shadow(1px 1px 2px #333);
-        filter: drop-shadow(1px 1px 2px #333); }
+        color: #ed1449; }
   #contact .back-to-top {
     display: inline-block;
     max-width: 60px;
