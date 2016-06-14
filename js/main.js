@@ -77,3 +77,29 @@ function init() {
   });
 
 }
+
+
+// SWAPPING BACKGROUNDS
+$('#about-btn').on('click', function() {
+  $('body').css({
+    'background-position-x': '0'
+  });
+});
+
+$('#return-about').on('click', function() {
+  $('body').css({
+    'background-position-x': '-370px'
+  });
+});
+
+$('#portfolio-btn').on('click', function() {
+  $('body').css({
+    'background-position-x': '-740px'
+  });
+});
+
+$('#return-portfolio').on('click', function() {
+  $('body').css({
+    'background-position-x': '-370px'
+  });
+});

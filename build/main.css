@@ -1,34 +1,42 @@
 body {
   background-image: url(../img/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position-x: -370px;
+  background-position-y: -20px;
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
   margin: 0px;
-  color: #fff; }
-  body .tabs {
-    max-width: 960px;
-    margin: 0 auto; }
-  body h1 {
-    font-size: 4em;
-    font-weight: 100;
-    margin-bottom: 0; }
-  body h2 {
-    font-size: 3em;
-    font-weight: 100;
-    margin-bottom: 0; }
-  body #title, body #about, body #portfolio {
-    padding: 50px;
-    transition: .5s ease;
-    -webkit-animation-duration: .2s;
-    -moz-animation-duration: .2s;
-    -ms-animation-duration: .2s;
-    animation-duration: .2s; }
-    body #title #about > h2, body #title #portfolio > h2, body #about #about > h2, body #about #portfolio > h2, body #portfolio #about > h2, body #portfolio #portfolio > h2 {
-      display: inline; }
-    body #title .marked, body #about .marked, body #portfolio .marked {
-      color: #fbe18a; }
+  color: #fff;
+  transition: .5s ease; }
+
+.about-bg {
+  background-image: url(../img/bg1.jpg);
+  background-repeat: repeat; }
+
+body .tabs {
+  max-width: 960px;
+  margin: 0 auto; }
+
+body h1 {
+  font-size: 4em;
+  font-weight: 100;
+  margin-bottom: 0; }
+
+body h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 0; }
+
+body #title, body #about, body #portfolio {
+  padding: 50px;
+  transition: .5s ease;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -ms-animation-duration: .5s;
+  animation-duration: .5s; }
+  body #title #about > h2, body #title #portfolio > h2, body #about #about > h2, body #about #portfolio > h2, body #portfolio #about > h2, body #portfolio #portfolio > h2 {
+    display: inline; }
+  body #title .marked, body #about .marked, body #portfolio .marked {
+    color: #fbe18a; }
 
 ::-webkit-scrollbar {
   width: 5px; }
@@ -1189,7 +1197,7 @@ th {
 
 #contact {
   text-align: center;
-  height: 100vh;
+  height: 85vh;
   max-width: 500px;
   margin: 50vh auto 0; }
   #contact .contact-content {
