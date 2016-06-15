@@ -1,6 +1,6 @@
 body {
   background-image: url(../img/bg.jpg);
-  background-position: -450px -250px;
+  background-position: -450px -260px;
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
   margin: 0px;
@@ -1260,7 +1260,7 @@ th {
 
 @media (max-width: 768px) {
   body {
-    background-position: -850px -209px; }
+    background-position: -850px -215px; }
     body #title, body #about, body #portfolio, body .contact {
       padding: 20px; }
       body #title h2, body #about h2, body #portfolio h2, body .contact h2 {

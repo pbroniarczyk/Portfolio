@@ -78,11 +78,11 @@ function init() {
 $('#about-btn').on('click', function() {
   if ($(window).width() < 768) {
     $('body').css({
-      'background-position': '-450px -209px'
+      'background-position': '-450px -215px'
     });
   } else {
     $('body').css({
-      'background-position': '0 -250px'
+      'background-position': '0 -260px'
     });
   }
 });
@@ -90,11 +90,11 @@ $('#about-btn').on('click', function() {
 $('#return-about').on('click', function() {
   if ($(window).width() < 768) {
     $('body').css({
-      'background-position': '-850px -209px'
+      'background-position': '-850px -215px'
     });
   } else {
     $('body').css({
-      'background-position': '-450px -250px'
+      'background-position': '-450px -260px'
     });
   }
 });
@@ -102,11 +102,11 @@ $('#return-about').on('click', function() {
 $('#portfolio-btn').on('click', function() {
   if ($(window).width() < 768) {
     $('body').css({
-      'background-position': '-1250px -209px'
+      'background-position': '-1250px -215px'
     });
   } else {
     $('body').css({
-      'background-position': '-900px -250px'
+      'background-position': '-900px -260px'
     });
   }
 });
@@ -114,11 +114,11 @@ $('#portfolio-btn').on('click', function() {
 $('#return-portfolio').on('click', function() {
   if ($(window).width() < 768) {
     $('body').css({
-      'background-position': '-850px -209px'
+      'background-position': '-850px -215px'
     });
   } else {
     $('body').css({
-      'background-position': '-450px -250px'
+      'background-position': '-450px -260px'
     });
   }
 });
