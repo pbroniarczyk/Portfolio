@@ -1008,7 +1008,7 @@ th {
     transition: .5s ease;
     position: relative; }
     .proj-desc .link::after {
-      content: '>>';
+      content: 'visit website';
       visibility: hidden;
       opacity: 0;
       position: absolute;
@@ -1021,7 +1021,7 @@ th {
     .proj-desc .link:hover {
       background-color: #ed1449;
       color: #fff;
-      padding-right: 50px; }
+      padding-right: 133px; }
   .proj-desc .link:hover::after {
     visibility: visible;
     opacity: 1; }
