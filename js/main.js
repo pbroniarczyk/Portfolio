@@ -2,11 +2,6 @@ window.onload = init();
 function init() {
   $(function(){
     $('#gallery').css('display', 'none');
-    /*$('#title').children().addClass('animate fadeInUp');
-
-    if ($('#title').children().hasClass('animate fadeInUp')) {
-      $('#title').children().css('visibility', 'visible');
-    }*/
   });
 
   var leftBtn = document.getElementById('about-btn'),
@@ -81,25 +76,49 @@ function init() {
 
 // SWAPPING BACKGROUNDS
 $('#about-btn').on('click', function() {
-  $('body').css({
-    'background-position': '0 -20px'
-  });
+  if ($(window).width() < 768) {
+    $('body').css({
+      'background-position': '-450px -209px'
+    });
+  } else {
+    $('body').css({
+      'background-position': '0 -250px'
+    });
+  }
 });
 
 $('#return-about').on('click', function() {
-  $('body').css({
-    'background-position': '-370px -20px'
-  });
+  if ($(window).width() < 768) {
+    $('body').css({
+      'background-position': '-850px -209px'
+    });
+  } else {
+    $('body').css({
+      'background-position': '-450px -250px'
+    });
+  }
 });
 
 $('#portfolio-btn').on('click', function() {
-  $('body').css({
-    'background-position': '-740px -20px'
-  });
+  if ($(window).width() < 768) {
+    $('body').css({
+      'background-position': '-1250px -209px'
+    });
+  } else {
+    $('body').css({
+      'background-position': '-900px -250px'
+    });
+  }
 });
 
 $('#return-portfolio').on('click', function() {
-  $('body').css({
-    'background-position': '-370px -20px'
-  });
+  if ($(window).width() < 768) {
+    $('body').css({
+      'background-position': '-850px -209px'
+    });
+  } else {
+    $('body').css({
+      'background-position': '-450px -250px'
+    });
+  }
 });
