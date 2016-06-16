@@ -1203,6 +1203,8 @@ th {
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
+  #contact .marked {
+    color: #ff3f40 !important; }
   #contact p {
     margin-bottom: 20px;
     text-align: justify; }
