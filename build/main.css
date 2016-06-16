@@ -1279,7 +1279,7 @@ th {
     left: 50%;
     display: block; }
   #title .buttons #about-btn:hover:before {
-    transform: rotateZ(-45deg) translate(20%, 37%);
+    transform: rotateZ(-45deg) translate(19%, 38%);
     color: #ff3f40; }
   #title .buttons #about-btn:after {
     display: none; }
