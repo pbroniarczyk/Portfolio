@@ -35,17 +35,16 @@ body #title, body #about, body #portfolio {
   body #title #about > h2, body #title #portfolio > h2, body #about #about > h2, body #about #portfolio > h2, body #portfolio #about > h2, body #portfolio #portfolio > h2 {
     display: inline; }
   body #title .marked, body #about .marked, body #portfolio .marked {
-    color: #ed1449; }
+    color: #fbe68b; }
 
 ::-webkit-scrollbar {
-  width: 5px; }
+  width: 7px;
+  background-color: #ff3f40; }
 
 ::-webkit-scrollbar-track {
-  background-color: #ed1449;
-  border-radius: 10px; }
+  background-color: #ff3f40; }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -494,7 +493,7 @@ th {
       opacity: 1;
       transform: rotateZ(-45deg) translate(-280%, -120%); }
     #title .buttons #about-btn:hover .fa {
-      color: #ed1449; }
+      color: #ff3f40; }
     #title .buttons #portfolio-btn {
       display: inline-block;
       padding: 15px;
@@ -542,7 +541,7 @@ th {
       right: -10px;
       bottom: 10px; }
     #title .buttons #portfolio-btn:hover .fa {
-      color: #ed1449; }
+      color: #ff3f40; }
     #title .buttons .logo {
       width: 38px;
       height: 38px;
@@ -582,7 +581,7 @@ th {
         transition: .5s ease; }
       #title .buttons .logo:hover {
         background-color: #fff;
-        color: #ed1449; }
+        color: #ff3f40; }
       #title .buttons .logo p {
         transform: rotatez(-45deg);
         text-transform: uppercase;
@@ -602,7 +601,7 @@ th {
       visibility: visible;
       opacity: 1; }
     #title .buttons .logo:hover p {
-      color: #ed1449; }
+      color: #ff3f40; }
 
 #about {
   display: none; }
@@ -658,7 +657,7 @@ th {
     right: -10px;
     bottom: 10px; }
   #about #return-about:hover .fa {
-    color: #ed1449; }
+    color: #ff3f40; }
   #about .about {
     display: flex;
     justify-content: space-between; }
@@ -691,9 +690,9 @@ th {
     transition: .5s ease;
     text-decoration: none; }
     #about .button:hover {
-      background-color: #ed1449;
+      background-color: #ff3f40;
       color: #fff;
-      border-color: #ed1449; }
+      border-color: #ff3f40; }
   #about .back-to-top {
     display: none;
     max-width: 60px;
@@ -719,7 +718,7 @@ th {
       transition: .5s ease;
       font-size: 16px; }
   #about .back-to-top:hover .fa {
-    color: #ed1449; }
+    color: #ff3f40; }
   #about .BTT-visible {
     display: inline-block; }
 
@@ -891,7 +890,7 @@ th {
     right: -10px;
     bottom: 10px; }
   #portfolio #return-portfolio:hover .fa {
-    color: #ed1449; }
+    color: #ff3f40; }
   #portfolio .portfolio p {
     text-align: justify;
     margin: 50px 0; }
@@ -900,7 +899,7 @@ th {
     margin: 50px 0;
     display: none; }
     #portfolio .portfolio #gallery .thumb {
-      background-color: #ed1449;
+      background-color: #ff3f40;
       position: relative;
       overflow: hidden;
       float: left;
@@ -943,17 +942,17 @@ th {
       z-index: 1;
       transform: translateY(-50%); }
     #portfolio .portfolio .overlay h3 {
-      color: #ed1449; }
+      color: #ff3f40; }
     #portfolio .portfolio .overlay p {
       color: #333; }
     #portfolio .portfolio .overlay a {
-      color: #ed1449;
+      color: #ff3f40;
       padding: 10px 20px;
       text-decoration: none;
-      border: 1px solid #ed1449;
+      border: 1px solid #ff3f40;
       transition: .5s ease; }
       #portfolio .portfolio .overlay a:hover {
-        background-color: #ed1449;
+        background-color: #ff3f40;
         color: #fff; }
   #portfolio .portfolio .clear::after {
     content: '';
@@ -984,7 +983,7 @@ th {
       transition: .5s ease;
       font-size: 16px; }
   #portfolio .back-to-top:hover .fa {
-    color: #ed1449; }
+    color: #ff3f40; }
   #portfolio .BTT-visible {
     display: inline-block; }
 
@@ -996,15 +995,15 @@ th {
   padding: 0 50px;
   box-sizing: border-box; }
   .proj-desc .marked {
-    color: #ed1449;
+    color: #ff3f40;
     font-weight: bold; }
   .proj-desc .link {
-    color: #ed1449;
+    color: #ff3f40;
     text-decoration: none;
     padding: 10px 20px;
     margin-top: 10px;
     display: inline-block;
-    border: 1px solid #ed1449;
+    border: 1px solid #ff3f40;
     transition: .5s ease;
     position: relative; }
     .proj-desc .link::after {
@@ -1015,11 +1014,11 @@ th {
       top: 0;
       right: 0;
       padding: 10px;
-      color: #ed1449;
+      color: #ff3f40;
       background-color: #fff;
       transition: .5s ease; }
     .proj-desc .link:hover {
-      background-color: #ed1449;
+      background-color: #ff3f40;
       color: #fff;
       padding-right: 133px; }
   .proj-desc .link:hover::after {
@@ -1055,26 +1054,26 @@ th {
       -moz-transform: rotate(-45deg);
       transform: rotate(-45deg);
       font-size: 20px;
-      color: #ed1449; }
+      color: #ff3f40; }
     .proj-desc .buttons #about-btn {
       display: inline-block;
       padding: 15px;
       margin-right: 15px;
-      border: 1px solid #ed1449;
+      border: 1px solid #ff3f40;
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       transform: rotate(45deg);
       transition: .5s ease;
       position: relative; }
       .proj-desc .buttons #about-btn:hover {
-        background-color: #ed1449; }
+        background-color: #ff3f40; }
       .proj-desc .buttons #about-btn::before {
         content: '';
         visibility: hidden;
         opacity: 0;
         width: 50px;
         height: 50px;
-        border: 1px solid #ed1449;
+        border: 1px solid #ff3f40;
         position: absolute;
         left: 0;
         top: 0;
@@ -1092,7 +1091,7 @@ th {
         position: absolute;
         transition: .5s ease;
         transform: rotateZ(-45deg) translate(-26%, -235%);
-        color: #ed1449; }
+        color: #ff3f40; }
     .proj-desc .buttons #about-btn:hover:before {
       visibility: visible;
       opacity: 1;
@@ -1108,14 +1107,14 @@ th {
       display: inline-block;
       padding: 15px;
       margin-left: 15px;
-      border: 1px solid #ed1449;
+      border: 1px solid #ff3f40;
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       transform: rotate(45deg);
       transition: .5s ease;
       position: relative; }
       .proj-desc .buttons #portfolio-btn:hover {
-        background-color: #ed1449; }
+        background-color: #ff3f40; }
       .proj-desc .buttons #portfolio-btn::before {
         content: 'Next';
         text-decoration: none;
@@ -1128,14 +1127,14 @@ th {
         position: absolute;
         transition: .5s ease;
         transform: rotateZ(-45deg) translate(0%, -200%);
-        color: #ed1449; }
+        color: #ff3f40; }
       .proj-desc .buttons #portfolio-btn::after {
         content: '';
         visibility: hidden;
         opacity: 0;
         width: 50px;
         height: 51px;
-        border: 1px solid #ed1449;
+        border: 1px solid #ff3f40;
         position: absolute;
         right: -1px;
         bottom: -1px;
@@ -1160,9 +1159,9 @@ th {
       left: 50%;
       transform: translateX(-51%) rotateZ(45deg);
       transition: .5s ease;
-      border: 1px solid #ed1449; }
+      border: 1px solid #ff3f40; }
       .proj-desc .buttons #gallery-menu:hover {
-        background-color: #ed1449;
+        background-color: #ff3f40;
         cursor: pointer; }
       .proj-desc .buttons #gallery-menu::before {
         content: 'Menu';
@@ -1171,14 +1170,14 @@ th {
         position: absolute;
         transition: 0.5s ease;
         transform: rotateZ(-45deg) translate(-20%, 0);
-        color: #ed1449; }
+        color: #ff3f40; }
       .proj-desc .buttons #gallery-menu::after {
         content: '';
         visibility: hidden;
         opacity: 0;
         width: 50px;
         height: 51px;
-        border: 1px solid #ed1449;
+        border: 1px solid #ff3f40;
         position: absolute;
         bottom: -1px;
         right: -1px;
@@ -1218,8 +1217,8 @@ th {
     text-decoration: none; }
     #contact .email:hover {
       color: #fff;
-      background-color: #ed1449;
-      border-color: #ed1449; }
+      background-color: #ff3f40;
+      border-color: #ff3f40; }
   #contact .contact-icon {
     display: flex;
     justify-content: space-around;
@@ -1230,7 +1229,7 @@ th {
       color: #fff;
       transition: .5s ease; }
       #contact .contact-icon .fa:hover {
-        color: #ed1449; }
+        color: #ff3f40; }
   #contact .back-to-top {
     display: inline-block;
     max-width: 60px;
@@ -1256,7 +1255,7 @@ th {
       font-size: 16px;
       color: #fff; }
   #contact .back-to-top:hover .fa {
-    color: #ed1449; }
+    color: #ff3f40; }
 
 @media (max-width: 768px) {
   body {
@@ -1279,7 +1278,7 @@ th {
     display: block; }
   #title .buttons #about-btn:hover:before {
     transform: rotateZ(-45deg) translate(20%, 37%);
-    color: #ed1449; }
+    color: #ff3f40; }
   #title .buttons #about-btn:after {
     display: none; }
   #title .buttons #about-btn .fa {
@@ -1297,7 +1296,7 @@ th {
     display: block; }
   #title .buttons #portfolio-btn:hover:before {
     transform: rotateZ(-45deg) translate(-2%, -290%);
-    color: #ed1449; }
+    color: #ff3f40; }
   #title .buttons #portfolio-btn:after {
     display: none; }
   #title .buttons #portfolio-btn .fa {
@@ -1309,7 +1308,7 @@ th {
     #title .buttons .logo::after {
       display: none; }
     #title .buttons .logo p {
-      color: #ed1449; }
+      color: #ff3f40; }
   #title .buttons hr {
     display: none; }
   #about #return-about::before {
