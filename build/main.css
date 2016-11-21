@@ -657,7 +657,7 @@ th {
     right: -10px;
     bottom: 10px; }
   #about #return-about:hover .fa {
-    color: #ff3f40; }
+    color: #312e43 !important; }
   #about .about {
     display: flex;
     justify-content: space-between; }
