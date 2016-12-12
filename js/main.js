@@ -1,9 +1,5 @@
 window.onload = init();
 function init() {
-  $(function(){
-    $('#gallery').css('display', 'none');
-  });
-
   var leftBtn = document.getElementById('about-btn'),
       rightBtn = document.getElementById('portfolio-btn'),
       returnLeft = document.getElementById('return-about'),
