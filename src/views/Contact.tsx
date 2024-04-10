@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 import PageShell from '../hoc/PageShell';
 
-const Home = () => {
+const Contact = () => {
   return (
     <div>
-      <h1>Paweł Broniarczyk</h1>
+      <h1>Contact</h1>
 
       <p>
         <Link to="/">Home</Link>
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default PageShell(Home);
+export default PageShell(Contact);
