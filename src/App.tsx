@@ -5,7 +5,7 @@ import Contact from './views/Contact';
 import Experience from './views/Experience';
 import Home from './views/Home';
 
-import './main.css';
+import './main.scss';
 
 const routes = [
   {

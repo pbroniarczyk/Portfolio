@@ -1,24 +1,14 @@
-import { Link } from 'react-router-dom';
-
 import PageShell from '../hoc/PageShell';
+import Navigation from '../components/Navigation/Navigation';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Paweł Broniarczyk</h1>
-
-      <p>
-        <Link to="/">Home</Link>
-      </p>
-      <p>
-        <Link to="/about">About</Link>
-      </p>
-      <p>
-        <Link to="/contact">Contact</Link>
-      </p>
-      <p>
-        <Link to="/experience">Experience</Link>
-      </p>
+    <div className="view view--home">
+      <h1 className="headline">
+        <strong>Paweł Broniarczyk</strong>
+      </h1>
+      <h2>Frontend Developer</h2>
+      <Navigation />
     </div>
   );
 };

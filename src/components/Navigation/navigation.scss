@@ -1,0 +1,13 @@
+.navigation {
+  align-items: center;
+
+  .navigation__row {
+    &:first-of-type {
+      gap: 50px
+    }
+
+    &:last-of-type {
+      transform: translate(0px, -16px);
+    }
+  }
+}

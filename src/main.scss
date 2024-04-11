@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-white);
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --color-black: black;
+  --color-navy: #375880;
+  --color-white: white;
+}
+
+@mixin flex-gap($gap) {
+  .flex--gap-#{$gap} {
+    gap: #{$gap}px;
+  }
+}
+
+.view-wrapper {
+  background-image: url('assets/images/bg.jpg');
+  background-position: -450px -260px;
+  height: 100vh;
+}
+
+.view {
+  height: 100vh;
+  display: flex;
+
+  &.view--home {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+
+  &.flex--collumn {
+    flex-direction: column;
+  }
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.navigation {
+  margin-top: 100px;
+}

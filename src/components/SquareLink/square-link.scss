@@ -1,0 +1,142 @@
+.square-link {
+  color: transparent;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border: 1px solid var(--color-white);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: 0.5s ease;
+  position: relative;
+
+  &:hover {
+    background-color: var(--color-white);
+
+    &::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    path {
+      fill: var(--color-navy);
+    }
+  }
+
+  &::before {
+    content: '';
+    visibility: hidden;
+    opacity: 0;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.2s ease-in;
+  }
+
+  &.square-link--UP {
+    &:hover {
+      &::before {
+        top: -10px;
+        left: -10px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(4px, -82px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    svg {
+      transform: rotateZ(-135deg) translate(-30px, 0px);
+    }
+  }
+
+  &.square-link--RIGHT {
+    &:hover {
+      &::before {
+        top: -13px;
+        left: 10px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(110px, 2px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    svg {
+      transform: rotateZ(-45deg) translate(0px, 30px);
+    }
+  }
+
+  &.square-link--DOWN {
+    &:hover {
+      &::before {
+        top: 10px;
+        left: 10px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(5px, 90px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    svg {
+      transform: rotateZ(45deg) translate(30px, 0px);
+    }
+  }
+
+  &.square-link--LEFT {
+    &:hover {
+      &::before {
+        left: -10px;
+        top: 8px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(-87px, 3px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    svg {
+      transform: rotateZ(-225deg) translate(0px, -30px);
+    }
+  }
+
+  svg {
+    width: 30px;
+    transform: rotateZ(-45deg) translateY(90%);
+    transition: all 0.2s ease-in;
+  }
+
+  path {
+    fill: var(--color-white);
+  }
+
+  .square-link__label-wrapper {
+    position: absolute;
+    top: 34%;
+    left: 32%;
+    width: 50px;
+    height: 50px;
+    transform: rotateZ(-45deg);
+    color: var(--color-white);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+  }
+}
