@@ -14,21 +14,27 @@ type Props = {
   direction: "LEFT" | "RIGHT" | "UP" | "DOWN";
   label: string;
   link: string;
+  variant?: "LARGE" | "SMALL";
 };
 
-const SquareLink: FC<Props> = ({ className, direction, label, link }) => {
+const SquareLink: FC<Props> = ({ className, direction, label, link, variant = "LARGE" }) => {
   const [isHovered, setHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => setHovered((prevState) => !prevState);
 
-  const rootClass = clsx("square-link w-20 h-20", `square-link--${direction}`, className);
+  const rootClass = clsx(
+    "square-link w-20 h-20",
+    `square-link--${direction}`,
+    `square-link--${variant}`,
+    className
+  );
   const labelClass = clsx("square-link__label-wrapper", {
     "square-link__label-wrapper--visible": isHovered,
   });
 
   return (
     <div className={rootClass} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
-      <Link href={link}>
+      <Link className="block w-20 h-20" href={link}>
         <Image src={isHovered ? ArrowRightNavyIcon : ArrowRightWhiteIcon} alt="" className="w-8" />
 
         <div className={labelClass}>
