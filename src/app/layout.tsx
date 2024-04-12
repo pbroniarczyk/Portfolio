@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 
-import PageShell from "@/components/PageShell/PageShell";
-
 import "./globals.css";
 
 const raleway = Raleway({
@@ -23,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
-        <PageShell>{children}</PageShell>
-      </body>
+      <body className={raleway.className}>{children}</body>
     </html>
   );
 }
