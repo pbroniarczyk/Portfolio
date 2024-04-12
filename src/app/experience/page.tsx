@@ -3,7 +3,7 @@ import SquareLink from "@/components/SquareLink/SquareLink";
 
 export default function Experience() {
   return (
-    <div className="view view--experience">
+    <div className="view__experience">
       <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
         <SquareLink direction="LEFT" label="back" link="/" variant="SMALL" />
         <Headline label="experience" />

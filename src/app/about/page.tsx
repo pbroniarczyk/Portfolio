@@ -7,7 +7,7 @@ import ProfileImg from "@/assets/images/profile-photo.png";
 
 export default function About() {
   return (
-    <div className="view view--about">
+    <div className="view__about">
       <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
         <Headline label="about" />
         <SquareLink direction="RIGHT" label="back" link="/" variant="SMALL" />

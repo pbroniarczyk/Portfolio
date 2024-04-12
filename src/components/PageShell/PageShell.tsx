@@ -9,7 +9,7 @@ type Props = {
 const PageShell: FC<Props> = ({ children }) => {
   return (
     <div className="view-wrapper" style={{ backgroundImage: `url(/bg.jpg)` }}>
-      <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <main className="view flex min-h-screen flex-col items-center justify-center p-24">
         {children}
       </main>
     </div>

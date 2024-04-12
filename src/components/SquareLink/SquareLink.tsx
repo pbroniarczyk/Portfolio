@@ -5,6 +5,8 @@ import { FC, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import useAnimatedRouter from "@/hooks/useAnimatedRouter";
+
 import ArrowRightWhiteIcon from "@/assets/icons/arrow-right-white.png";
 import ArrowRightNavyIcon from "@/assets/icons/arrow-right-navy.png";
 import "./square-link.scss";
@@ -18,6 +20,8 @@ type Props = {
 };
 
 const SquareLink: FC<Props> = ({ className, direction, label, link, variant = "LARGE" }) => {
+  const { animatedRoute } = useAnimatedRouter();
+
   const [isHovered, setHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => setHovered((prevState) => !prevState);
@@ -34,7 +38,13 @@ const SquareLink: FC<Props> = ({ className, direction, label, link, variant = "L
 
   return (
     <div className={rootClass} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
-      <Link className="block w-20 h-20" href={link}>
+      <Link
+        className="block w-20 h-20"
+        href={link}
+        onClick={() => {
+          animatedRoute(link);
+        }}
+      >
         <Image src={isHovered ? ArrowRightNavyIcon : ArrowRightWhiteIcon} alt="" className="w-8" />
 
         <div className={labelClass}>

@@ -3,7 +3,7 @@ import SquareLink from "@/components/SquareLink/SquareLink";
 
 export default function Contact() {
   return (
-    <div className="view view--contact">
+    <div className="view__contact">
       <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
         <Headline label="contact" />
         <SquareLink direction="UP" label="back" link="/" variant="SMALL" />
