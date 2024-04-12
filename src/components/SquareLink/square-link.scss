@@ -1,0 +1,142 @@
+.square-link {
+  color: transparent;
+  display: inline-block;
+  border: 1px solid var(--color-white);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: 0.5s ease;
+  position: relative;
+
+  &:hover {
+    background-color: var(--color-white);
+
+    &::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    path {
+      fill: var(--color-navy);
+    }
+  }
+
+  &::before {
+    content: '';
+    visibility: hidden;
+    opacity: 0;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--color-white);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.2s ease-in;
+  }
+
+  &.square-link--UP {
+    &:hover {
+      &::before {
+        top: -10px;
+        left: -10px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(0px, -70px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    img {
+      transform: rotateZ(-135deg) translate(-27px, -2px);
+    }
+  }
+
+  &.square-link--RIGHT {
+    &:hover {
+      &::before {
+        top: -13px;
+        left: 10px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(100px, -0px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    img {
+      transform: rotateZ(-45deg) translate(2px, 26px);
+    }
+  }
+
+  &.square-link--DOWN {
+    &:hover {
+      &::before {
+        top: 10px;
+        left: 10px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(0px, 70px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    img {
+      transform: rotateZ(45deg) translate(26px, 2px);
+    }
+  }
+
+  &.square-link--LEFT {
+    &:hover {
+      &::before {
+        left: -10px;
+        top: 8px;
+      }
+
+      .square-link__label-wrapper {
+        transform: rotateZ(-45deg) translate(-83px, -0px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    img {
+      transform: rotateZ(-225deg) translate(3px, -26px);
+    }
+  }
+
+  img {
+    transform: rotateZ(-45deg) translateY(90%);
+    transition: all 0.2s ease-in;
+  }
+
+  path {
+    fill: var(--color-white);
+  }
+
+  .square-link__label-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(-45deg);
+    color: var(--color-white);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+  }
+}
