@@ -7,35 +7,45 @@ import ProfileImg from "@/assets/images/profile-photo.png";
 
 export default function About() {
   return (
-    <div className="view__about">
-      <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
-        <Headline label="about" />
-        <SquareLink direction="RIGHT" label="back" link="/" variant="SMALL" />
-      </div>
-
-      <section className="flex items-start gap-6 max-w-4xl">
-        <div className="bio__content flex flex-col gap-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
+    <div className="view__about max-w-4xl flex items-start gap-16">
+      <div className="view__content ">
+        <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
+          <Headline label="about" />
+          <SquareLink direction="RIGHT" label="back" link="/" variant="SMALL" />
         </div>
 
-        <Image src={ProfileImg} width={150} height={150} alt="Paweł Broniarczyk" />
-      </section>
+        <section className="max-w-4xl">
+          <div className="bio__content flex flex-col gap-6">
+            <p>
+              Hello Wo... <br />
+              Hi! My name is Paweł and (...)
+            </p>
+            <p>
+              My interest in web development started way back when I played around with page styles
+              for my band's MaySpace page. Add a couple years and I started being serious about it
+              when I started learning HTML, CSS and JS (the classics). Since 2017, I build
+              interfaces and applications at Emplocity.
+            </p>
+
+            <div className="flex gap-16 mx-auto">
+              <ul className="list-disc pl-4">
+                <p className="ml-[-16px]">Tech stack:</p>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>TypeScript</li>
+              </ul>
+
+              <ul className="list-disc pl-4">
+                <p className="ml-[-16px]">For fun (aka still learning):</p>
+                <li>Node.js</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <Image src={ProfileImg} width={150} height={150} alt="profile image" />
     </div>
   );
 }

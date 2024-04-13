@@ -12,7 +12,7 @@ type Props = {
 const SocialLink: FC<Props> = ({ icon, link, name }) => {
   return (
     <a href={link} target="_blank" rel="noopener" className="flex gap-2 items-center group">
-      <Image src={icon} width={10} height={10} alt={name} />
+      <Image src={icon} alt={name} className="w-[10px] h-[10px]" />
       <span className="group-hover:underline">{name}</span>
     </a>
   );
