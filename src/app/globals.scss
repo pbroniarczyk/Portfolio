@@ -18,4 +18,8 @@ body {
     opacity: 0;
     visibility: "hidden";
   }
+
+  .marked {
+    @apply text-yellow-200;
+  }
 }

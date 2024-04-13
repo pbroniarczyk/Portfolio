@@ -1,5 +1,9 @@
 import Headline from "@/components/Headline/Headline";
 import SquareLink from "@/components/SquareLink/SquareLink";
+import SocialLink from "@/components/SocialLink/SocialLink";
+
+import githubIcon from "@/assets/icons/github-icon.png";
+import linkedinIcon from "@/assets/icons/linkedin-icon.png";
 
 export default function Contact() {
   return (
@@ -12,13 +16,23 @@ export default function Contact() {
       <section className="flex items-start gap-6 max-w-4xl">
         <div className="bio__content flex flex-col gap-6">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            If you have any <span className="marked">questions</span> feel free to contact me.
+            <br />
+            You can find me on social media or simply write me an{" "}
+            <a className="marked hover:underline" href="mailto:pbroniarczyk@outlook.com">
+              email
+            </a>
+            .
           </p>
+
+          <div className="flex justify-center gap-6">
+            <SocialLink icon={githubIcon} link="https://github.com/pbroniarczyk" name="GitHub" />
+            <SocialLink
+              icon={linkedinIcon}
+              link="https://linkedin.com/in/pawelbroniarczyk"
+              name="LinkedIn"
+            />
+          </div>
         </div>
       </section>
     </div>
