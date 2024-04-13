@@ -15,7 +15,7 @@ export const animatePageIn = () => {
       yPercent: 0,
       opacity: 1,
       visibility: "visible",
-      duration: 0.4,
+      duration: 0.3,
     });
   }
 };
@@ -33,7 +33,7 @@ export const animatePageOut = (href: string, router: AppRouterInstance) => {
     }).to(animationWrapper, {
       yPercent: -10,
       opacity: 0,
-      duration: 0.4,
+      duration: 0.3,
       visibility: "hidden",
       onComplete: () => {
         router.push(href);
