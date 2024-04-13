@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-black: black;
+  --color-navy: #38354a;
+  --color-white: white;
+}
+
+body {
+  color: var(--color-white);
+  overflow: hidden;
+
+  .view {
+    opacity: 0;
+    visibility: "hidden";
+  }
+}

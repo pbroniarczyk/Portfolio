@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 
-import "./globals.css";
+import "./globals.scss";
 
 const raleway = Raleway({
   weight: ["100", "400", "700"],

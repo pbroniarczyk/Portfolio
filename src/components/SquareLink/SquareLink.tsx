@@ -2,10 +2,10 @@
 
 import clsx from "clsx";
 import { FC, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-import useAnimatedRouter from "@/hooks/useAnimatedRouter";
+import { animatePageOut } from "@/animations";
 
 import ArrowRightWhiteIcon from "@/assets/icons/arrow-right-white.png";
 import ArrowRightNavyIcon from "@/assets/icons/arrow-right-navy.png";
@@ -20,7 +20,11 @@ type Props = {
 };
 
 const SquareLink: FC<Props> = ({ className, direction, label, link, variant = "LARGE" }) => {
-  const { animatedRoute } = useAnimatedRouter();
+  const router = useRouter();
+
+  const handleClick = () => {
+    animatePageOut(link, router);
+  };
 
   const [isHovered, setHovered] = useState<boolean>(false);
 
@@ -38,19 +42,13 @@ const SquareLink: FC<Props> = ({ className, direction, label, link, variant = "L
 
   return (
     <div className={rootClass} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
-      <Link
-        className="block w-20 h-20"
-        href={link}
-        onClick={() => {
-          animatedRoute(link);
-        }}
-      >
+      <button className="block w-20 h-20" onClick={handleClick}>
         <Image src={isHovered ? ArrowRightNavyIcon : ArrowRightWhiteIcon} alt="" className="w-8" />
 
         <div className={labelClass}>
           <span className="square-link__label">{label}</span>
         </div>
-      </Link>
+      </button>
     </div>
   );
 };
