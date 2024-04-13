@@ -1,6 +1,8 @@
 import Headline from "@/components/Headline/Headline";
 import SquareLink from "@/components/SquareLink/SquareLink";
 
+import { projects } from "./projects";
+
 export default function Experience() {
   return (
     <div className="view__experience">
@@ -10,7 +12,7 @@ export default function Experience() {
       </div>
 
       <section className="flex items-start gap-6 max-w-4xl">
-        <div className="bio__content flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <p>
             Since 2017 I have been working at{" "}
             <a
@@ -37,34 +39,13 @@ export default function Experience() {
             the competition.
           </p>
 
-          <p>Main projects I've worked on:</p>
+          <p className="text-xl font-bold mt-10">Main projects I've worked on:</p>
 
           <div className="grid grid-cols-4 gap-y-6 px-5">
-            <h4 className="font-bold text-l text-left">Recruitment platform</h4>
-            <p className="col-span-3 ml-5">
-              Built with React, Apollo, and TypeScript, working closely with the customer from MVP
-              to production. Working on this project taught me to work on a changing project,
-              introducing new features while keeping the code clean and maintainable.
-            </p>
-            <h4 className="font-bold text-l text-left">
-              Intelligent support tools for system users
-            </h4>
-            <p className="col-span-3 ml-5">
-              An application that supports the completion of a formal application with hints to
-              fields downloaded with the help of Apollo. The entire process of registering the
-              application, and at a later stage its review, is managed by Redux.
-            </p>
-            <h4 className="font-bold text-l text-left">
-              Trading platform for sports clubs and sponsors
-            </h4>
-            <p className="col-span-3 ml-5">
-              React application, during which I learned how to efficiently separate the service
-              layer from the visual one.
-            </p>
-            <h4 className="font-bold text-l text-left">Company UI NPM package</h4>
-            <p className="col-span-3 ml-5">
-              NPM package with UI components wrapped with Rollup and Storybook
-            </p>
+            {projects.map((project) => [
+              <h4 className="font-bold text-l text-left">{project.name}</h4>,
+              <p className="col-span-3 ml-5">{project.description}</p>,
+            ])}
           </div>
         </div>
       </section>
