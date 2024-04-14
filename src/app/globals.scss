@@ -16,6 +16,13 @@ body {
   color: var(--color-white);
   text-align: justify;
 
+  p,
+  span,
+  a,
+  li {
+    @apply text-base;
+  }
+
   .marked {
     @apply text-yellow-200;
   }

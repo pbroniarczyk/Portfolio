@@ -13,10 +13,9 @@ export default function About() {
         <section className="max-w-4xl">
           <div className="bio__content flex flex-col gap-6">
             <p>
-              Hello Wo... <br />
-              Hi! My name is <span className="marked">Pawel</span>, and I build things on the
-              internet for people to click on (also swipe, type, and drag), and when I'm not sitting
-              in front of my computer, I enjoy board games and painting minis.
+              Hi! My name is <span className="marked">Pawel</span>, a frontend developer with 7+
+              years of experience who builds things on the internet for people to click on. When I'm
+              not sitting in front of my computer, I enjoy board games and painting minis.
             </p>
             <p>
               My interest in web development started way back when I played around with page styles
@@ -24,6 +23,14 @@ export default function About() {
               when I started learning HTML, CSS and JS (the classics). Since 2017, I build
               interfaces and applications at Emplocity.
             </p>
+
+            <a
+              href="/Paweł-Broniarczyk-EN.pdf"
+              download="Paweł Broniarczyk EN"
+              className="block border border-slate-50 hover:border-yellow-200 hover:text-yellow-200 w-fit px-3 py-2"
+            >
+              Download CV
+            </a>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-5 sm:mt-0 sm:gap-16 mr-auto sm:mx-auto">
               <ul className="list-disc pl-4">

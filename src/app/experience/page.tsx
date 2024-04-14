@@ -19,10 +19,11 @@ export default function Experience() {
             >
               Emplocity
             </a>
-            , where I create and maintain applications using the React library and TypeScript, or
-            for other clients. <br />I work in the SCRUM methodology using Jira to manage project
-            tasks together with other developers, designer and project manager. We have developed a
-            workflow consisting in automatic application deployment with Jenkins
+            , where I create and maintain applications using the React library and TypeScript to
+            create features for a company's applications or to create new ones for other clients.
+            <br />I work in the SCRUM methodology, using Jira to manage project tasks together with
+            other developers, designers, and project managers. We have developed a workflow
+            consisting of automatic application deployment with Jenkins
           </p>
 
           <p>
