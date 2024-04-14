@@ -14,7 +14,9 @@ export default function About() {
           <div className="bio__content flex flex-col gap-6">
             <p>
               Hello Wo... <br />
-              Hi! My name is Paweł and (...)
+              Hi! My name is <span className="marked">Pawel</span>, and I build things on the
+              internet for people to click on (also swipe, type, and drag), and when I'm not sitting
+              in front of my computer, I enjoy board games and painting minis.
             </p>
             <p>
               My interest in web development started way back when I played around with page styles
