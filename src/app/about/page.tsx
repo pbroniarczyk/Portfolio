@@ -1,18 +1,14 @@
 import Image from "next/image";
 
-import Headline from "@/components/Headline";
-import SquareLink from "@/components/NavLink";
+import { PageNavigation } from "@/components/Navigation";
 
 import ProfileImg from "@/assets/images/profile-photo.png";
 
 export default function About() {
   return (
-    <div className="view__about max-w-4xl flex items-start gap-16">
+    <div className="view__about max-w-4xl flex flex-col-reverse sm:flex-row items-start gap-16">
       <div className="view__content ">
-        <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
-          <Headline label="about" />
-          <SquareLink direction="RIGHT" label="back" link="/" variant="SMALL" />
-        </div>
+        <PageNavigation direction="RIGHT" label="about" />
 
         <section className="max-w-4xl">
           <div className="bio__content flex flex-col gap-6">
@@ -27,7 +23,7 @@ export default function About() {
               interfaces and applications at Emplocity.
             </p>
 
-            <div className="flex gap-16 mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 mt-5 sm:mt-0 sm:gap-16 mr-auto sm:mx-auto">
               <ul className="list-disc pl-4">
                 <p className="ml-[-16px]">Tech stack:</p>
                 <li>JavaScript (ES6+)</li>
@@ -45,7 +41,13 @@ export default function About() {
         </section>
       </div>
 
-      <Image src={ProfileImg} width={150} height={150} alt="profile image" />
+      <Image
+        src={ProfileImg}
+        className="mx-auto sm:mr-auto"
+        width={150}
+        height={150}
+        alt="profile image"
+      />
     </div>
   );
 }

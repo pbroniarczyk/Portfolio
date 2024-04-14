@@ -1,6 +1,6 @@
 import NavLink from "@/components/NavLink";
 
-export default function Navigation() {
+export default function HomeNavigation() {
   return (
     <div className="flex flex-col items-center mt-12">
       <div className="flex gap-14">

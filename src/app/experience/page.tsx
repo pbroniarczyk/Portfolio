@@ -1,15 +1,11 @@
-import Headline from "@/components/Headline";
-import SquareLink from "@/components/NavLink";
+import { PageNavigation } from "@/components/Navigation";
 
 import { projects } from "./projects";
 
 export default function Experience() {
   return (
     <div className="view__experience">
-      <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
-        <SquareLink direction="LEFT" label="back" link="/" variant="SMALL" />
-        <Headline label="experience" />
-      </div>
+      <PageNavigation direction="LEFT" label="experience" />
 
       <section className="flex items-start gap-6 max-w-4xl">
         <div className="flex flex-col gap-6">
@@ -41,10 +37,10 @@ export default function Experience() {
 
           <p className="text-xl font-bold mt-10">Main projects I've worked on:</p>
 
-          <div className="grid grid-cols-4 gap-y-6 px-5">
+          <div className="block sm:grid grid-cols-4 gap-y-6 sm:px-5">
             {projects.map((project) => [
               <h4 className="font-bold text-l text-left">{project.name}</h4>,
-              <p className="col-span-3 ml-5">{project.description}</p>,
+              <p className="col-span-3 mb-5 sm:mb-0 sm:ml-5">{project.description}</p>,
             ])}
           </div>
         </div>

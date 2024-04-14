@@ -1,5 +1,4 @@
-import Headline from "@/components/Headline";
-import SquareLink from "@/components/NavLink";
+import { PageNavigation } from "@/components/Navigation";
 import SocialLink from "@/components/SocialLink";
 
 import githubIcon from "@/assets/icons/github-icon.png";
@@ -8,10 +7,7 @@ import linkedinIcon from "@/assets/icons/linkedin-icon.png";
 export default function Contact() {
   return (
     <div className="view__contact">
-      <div className="view__navigation flex justify-start gap-6 items-center mb-10 ">
-        <Headline label="contact" />
-        <SquareLink direction="UP" label="back" link="/" variant="SMALL" />
-      </div>
+      <PageNavigation direction="UP" label="contact" />
 
       <section className="flex items-start gap-6 max-w-4xl">
         <div className="bio__content flex flex-col gap-6">
@@ -25,7 +21,7 @@ export default function Contact() {
             .
           </p>
 
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-16 sm:gap-6">
             <SocialLink icon={githubIcon} link="https://github.com/pbroniarczyk" name="GitHub" />
             <SocialLink
               icon={linkedinIcon}

@@ -5,13 +5,15 @@ import { FC, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import type { DirectionType } from "../Navigation/types";
+
 import ArrowRightWhiteIcon from "@/assets/icons/arrow-right-white.png";
 import ArrowRightNavyIcon from "@/assets/icons/arrow-right-navy.png";
 import "./nav-link.scss";
 
 type Props = {
   className?: string;
-  direction: "LEFT" | "RIGHT" | "UP" | "DOWN";
+  direction: DirectionType;
   label: string;
   link: string;
   variant?: "LARGE" | "SMALL";

@@ -1,2 +1,3 @@
-import Navigation from "./Navigation";
-export default Navigation;
+import HomeNavigation from "./HomeNavigation";
+import PageNavigation from "./PageNavigation";
+export { HomeNavigation, PageNavigation };
