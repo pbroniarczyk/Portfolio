@@ -3,9 +3,7 @@
 import clsx from "clsx";
 import { FC, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-
-import { animatePageOut } from "@/animations";
+import Link from "next/link";
 
 import ArrowRightWhiteIcon from "@/assets/icons/arrow-right-white.png";
 import ArrowRightNavyIcon from "@/assets/icons/arrow-right-navy.png";
@@ -20,12 +18,6 @@ type Props = {
 };
 
 const NavLink: FC<Props> = ({ className, direction, label, link, variant = "LARGE" }) => {
-  const router = useRouter();
-
-  const handleClick = () => {
-    animatePageOut(link, router);
-  };
-
   const [isHovered, setHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => setHovered((prevState) => !prevState);
@@ -41,7 +33,10 @@ const NavLink: FC<Props> = ({ className, direction, label, link, variant = "LARG
     <div className={rootClass} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
       <div className="nav-link__bg" />
 
-      <button className="nav-link__btn block w-20 h-20" onClick={handleClick}>
+      <Link
+        href={link}
+        className="nav-link__btn relative z-[1] flex items-center justify-center w-20 h-20"
+      >
         {variant === "LARGE" ? (
           <span className="nav-link__label">{label}</span>
         ) : (
@@ -51,7 +46,7 @@ const NavLink: FC<Props> = ({ className, direction, label, link, variant = "LARG
             className="nav-link__icon w-8"
           />
         )}
-      </button>
+      </Link>
     </div>
   );
 };
