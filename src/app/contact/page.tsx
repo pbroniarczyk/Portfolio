@@ -1,6 +1,6 @@
-import Headline from "@/components/Headline/Headline";
-import SquareLink from "@/components/SquareLink/SquareLink";
-import SocialLink from "@/components/SocialLink/SocialLink";
+import Headline from "@/components/Headline";
+import SquareLink from "@/components/NavLink";
+import SocialLink from "@/components/SocialLink";
 
 import githubIcon from "@/assets/icons/github-icon.png";
 import linkedinIcon from "@/assets/icons/linkedin-icon.png";

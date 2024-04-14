@@ -1,5 +1,5 @@
-import Headline from "@/components/Headline/Headline";
-import SquareLink from "@/components/SquareLink/SquareLink";
+import Headline from "@/components/Headline";
+import SquareLink from "@/components/NavLink";
 
 import { projects } from "./projects";
 

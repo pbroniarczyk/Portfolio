@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Headline from "@/components/Headline/Headline";
-import SquareLink from "@/components/SquareLink/SquareLink";
+import Headline from "@/components/Headline";
+import SquareLink from "@/components/NavLink";
 
 import ProfileImg from "@/assets/images/profile-photo.png";
 

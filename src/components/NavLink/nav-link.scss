@@ -1,0 +1,160 @@
+.nav-link__bg {
+  color: transparent;
+  display: inline-block;
+  border: 1px solid var(--color-white);
+  transform: rotate(45deg);
+  transition: 0.2s ease-in;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  z-index: -1;
+
+  &::before {
+    content: '';
+    visibility: hidden;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    border: 1px solid var(--color-white);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.2s ease-in;
+  }
+}
+
+.nav-link {
+  &:hover {
+    .nav-link__bg {
+      background-color: var(--color-white);
+
+      &::before {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .nav-link__label {
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+  }
+
+
+
+  &.nav-link--UP {
+    &:hover {
+      .nav-link__bg::before {
+        top: -10px;
+        left: -10px;
+      }
+    }
+  }
+
+  &.nav-link--RIGHT {
+    &:hover {
+      .nav-link__bg::before {
+        top: -9px;
+        left: 8px;
+      }
+    }
+  }
+
+  &.nav-link--DOWN {
+    &:hover {
+      .nav-link__bg::before {
+        top: 9px;
+        left: 9px;
+      }
+    }
+  }
+
+  &.nav-link--LEFT {
+    &:hover {
+      .nav-link__bg::before {
+        left: -10px;
+        top: 8px;
+      }
+    }
+  }
+
+  .nav-link__icon {
+    transition: all 0.2s ease-in;
+    margin: 0 auto;
+  }
+
+  .nav-link__label {
+    color: var(--color-white);
+    transition: all .2s ease-in;
+  }
+}
+
+.nav-link--SMALL {
+  width: 2rem;
+  height: 2rem;
+
+  .nav-link__bg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.nav-link--RIGHT {
+    &:hover {
+      .nav-link__bg::before {
+        top: -6.5px;
+        left: 5px;
+      }
+    }
+  }
+
+  &.nav-link--UP {
+    &:hover {
+      .nav-link__bg::before {
+        top: -5px;
+        left: -5px;
+      }
+    }
+
+    .nav-link__btn {
+      transform: rotateZ(-90deg);
+    }
+  }
+
+  &.nav-link--LEFT {
+    &:hover {
+      .nav-link__bg::before {
+        left: -5.5px;
+        top: 4px;
+      }
+    }
+
+    .nav-link__btn {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.nav-link--DOWN {
+    &:hover {
+      .nav-link__bg::before {
+        top: 5px;
+        left: 5px;
+      }
+    }
+
+    .nav-link__btn {
+      transform: rotateZ(90deg);
+    }
+  }
+
+  .nav-link__btn {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+  }
+
+  .nav-link__icon {
+    width: 1.25rem;
+  }
+}
