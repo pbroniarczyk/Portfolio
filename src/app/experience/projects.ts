@@ -2,12 +2,12 @@ export const projects = [
   {
     name: "Recruitment platform",
     description:
-      "Built with React, Apollo, and TypeScript, working closely with the customer from MVP to production. Working on this project taught me to work on a changing project, introducing new features while keeping the code clean and maintainable.",
+      "Built with React, Apollo, and TypeScript, working closely with the client from MVP to production. Working on this project taught me to work on a constantly changing project, introducing new features while keeping the code maintainable.",
   },
   {
     name: "Intelligent support tools for system users",
     description:
-      "An application that supports the completion of a formal application with hints to fields downloaded with the help of Apollo. The entire process of registering the application, and at a later stage its review, is managed by Redux.",
+      "An application that supports the completion of a formal application with hints to fields fetched with the help of Apollo. The entire process of registering the application, and at a later stage, its review, is managed by Redux.",
   },
   {
     name: "Trading platform for sports clubs and sponsors",
@@ -21,6 +21,6 @@ export const projects = [
   {
     name: "Portfolio",
     description:
-      "A very simple portfolio website (which you are currently browsing) where I decided to try Next.js along with the Tailwind library. In addition, it is the first application that I have deployed with the help of Vercel",
+      "A very simple portfolio website (which you are currently browsing) where I decided to try Next.js along with the Tailwind library. In addition, it is the first application that I have deployed with the help of Vercel. It is available online, though it doesn't have a proper domain.",
   },
 ];
