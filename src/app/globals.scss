@@ -15,15 +15,39 @@
 body {
   color: var(--color-white);
   text-align: justify;
-
-  p,
-  span,
-  a,
-  li {
-    @apply text-base;
-  }
+  font-size: 16px;
 
   .marked {
     @apply text-yellow-200;
+  }
+
+  .marked-link {
+    @apply underline;
+
+    &:hover {
+      @extend .marked;
+    }
+
+    @media screen and (max-width: 370px) {
+      @apply text-yellow-200;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 20px;
   }
 }

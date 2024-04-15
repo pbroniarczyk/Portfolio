@@ -10,8 +10,8 @@ type Props = {
 
 const Template: FC<Props> = ({ children }) => {
   return (
-    <div className="view-wrapper bg-custom-background bg-no-repeat bg-position-1">
-      <main className="view flex min-h-screen flex-col items-center justify-center p-5 py-10 sm:p-12 md:px-24 md:py-5">
+    <div className="view-wrapper bg-custom-background bg-no-repeat">
+      <main className="view flex min-h-screen flex-col items-center justify-center p-5 py-10 sm:p-12 md:px-24 md:py-36">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

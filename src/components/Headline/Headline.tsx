@@ -7,7 +7,7 @@ type Props = {
 const Headline: FC<Props> = ({ label }) => {
   return (
     <div className="headline">
-      <h3 className="headline__label text-4xl font-semibold capitalize">{label}</h3>
+      <h3 className="headline__label font-semibold capitalize text-5xl">{label}</h3>
     </div>
   );
 };

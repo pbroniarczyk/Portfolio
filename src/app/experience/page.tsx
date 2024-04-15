@@ -7,13 +7,13 @@ export default function Experience() {
     <div className="view__experience">
       <PageNavigation direction="LEFT" label="experience" />
 
-      <section className="flex items-start gap-6 max-w-4xl">
+      <section className="flex items-start gap-6 max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
         <div className="flex flex-col gap-6">
           <p>
             Since 2017 I have been working at{" "}
             <a
               href="https://emplocity.com/en/"
-              className="marked hover:underline"
+              className="marked-link"
               target="_blank"
               rel="noopener"
             >
@@ -36,7 +36,9 @@ export default function Experience() {
             the competition.
           </p>
 
-          <p className="text-xl font-bold mt-10">Main projects I've worked on:</p>
+          <p className="text-xl md:text-2xl xl:text-3xl font-bold mt-10">
+            Main projects I've worked on:
+          </p>
 
           <div className="block sm:grid grid-cols-4 gap-y-6 sm:px-5">
             {projects.map((project) => [
