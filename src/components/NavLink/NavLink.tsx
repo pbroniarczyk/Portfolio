@@ -25,7 +25,7 @@ const NavLink: FC<Props> = ({ className, direction, label, link, variant = "LARG
   const handleMouseEnter = () => setHovered((prevState) => !prevState);
 
   const rootClass = clsx(
-    "nav-link w-20 h-20",
+    "nav-link w-20 h-20 group",
     `nav-link--${direction}`,
     `nav-link--${variant}`,
     className
@@ -40,7 +40,9 @@ const NavLink: FC<Props> = ({ className, direction, label, link, variant = "LARG
         className="nav-link__btn relative z-[1] flex items-center justify-center w-20 h-20"
       >
         {variant === "LARGE" ? (
-          <span className="nav-link__label">{label}</span>
+          <span className="nav-link__label text-base 2xl:text-xl group-hover:text-xs 2xl:group-hover:text-base">
+            {label}
+          </span>
         ) : (
           <Image
             src={isHovered ? ArrowRightNavyIcon : ArrowRightWhiteIcon}
